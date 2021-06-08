@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./site/style.css" />
+    <link rel="shortcut icon" href="site/fav.png" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="site/global.js"></script>
+    <title>Course Description</title>
+    <script>
+        window.onload = function () {
+            $(function () {
+                $("#includedHeader").load("site/header.html");
+            });
+            document.getElementById('g_u01').innerHTML = g.u01;
+            document.getElementById('g_u02').innerHTML = g.u02;
+            document.getElementById('g_u03').innerHTML = g.u03;
+            document.getElementById('g_u04').innerHTML = g.u04;
+            document.getElementById('g_u05').innerHTML = g.u05;
+        };
+    </script>
+    <script>
+    </script>
+</head>
+
+<body>
+    <div id="includedHeader"></div>
+    <article>
+        <!-- <img src="site/dwcLargeLogo.png" alt="DWC Logo" class="frontAndCenterImage"> -->
+        <h1>Course Description</h1>
+        <p>The course content found in these webpages was developed by Nathan Birch to fulfill the Performance Based
+            Objectives of the <a
+                href="https://digitalworkshopcenter.com/classes/frontend-web-development-classes/essential-web-tools/"
+                target="_blank">Essential Web Tools</a> course developed and managed by the <a
+                href="https://digitalworkshopcenter.com/" target="_blank">Digital Workshop Center</a> educational
+            institution.</p>
+        <h1>Instructor Introduction</h1>
+        <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/kjaTr2FiHGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h1>Performance Based Objectives</h1>
+        <p>Upon successful completion of the Essential Web Tools class, students will be able to:</p>
+        <ul>
+            <li><p>Effectively use modern code editors and related plugins</p></li>
+            <li><p>Understand the Command Line</p></li>
+            <li><p>Implement and understand Git, and related version control tools</p></li>
+            <li><p>Discuss backup tools and the importance of backups</p></li>
+            <li><p>Introduction to package managers</p></li>
+            <li><p>Understand and use browser developer tools</p></li>
+        </ul>
+        <h1>Course Pre-requisites</h1>
+        <p>Coming into this course</p>
+        <ul>
+            <li><p>Basic digital literacy including file management is required.</p></li>
+            <li><p><a href="https://digitalworkshopcenter.com/classes/frontend-web-development-classes/web-design-with-html-css-beginners-class/" target="_blank">Web Design with HTML & CSS</a> is required</p></li>
+        </ul>
+        <h1>Course Lessons</h1>
+        <ul>
+            <li>
+                <p><a href="lesson01/" id="g_u01"></a></p>
+            </li>
+            <li>
+                <p><a href="lesson02/" id="g_u02"></a></p>
+            </li>
+            <li>
+                <p><a href="lesson03/" id="g_u03"></a></p>
+            </li>
+            <li>
+                <p><a href="lesson04/" id="g_u04"></a></p>
+            </li>
+            <li>
+                <p><a href="lesson05/" id="g_u05"></a></p>
+            </li>
+        </ul>
+        <h1>Optional Supplemental Materials</h1>
+        <a href="https://www.amazon.com/Programming-Fundamentals-JavaScript-Rex-Barzee-ebook/dp/B0727XJR94" target="_blank">
+            <div class="supMatBord">
+                <table class="supMaterials">
+                    <tr>
+                        <td><img class="supImg" src="https://m.media-amazon.com/images/I/51riaGndv3L._SY346_.jpg" alt=""></td>
+                        <td>
+                            <h4 class="reallyBig">Programming Fundamentals in JavaScript</h4>
+                            <h6 class="reallyKindaBig">Rex Barzee</h6>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </a>
+        <br>
+        <a href="https://www.amazon.com/Beginning-JavaScript-Jeremy-McPeak/dp/1118903331?tag=hackr-20&geniuslink=true" target="_blank">
+            <div class="supMatBord">
+                <table class="supMaterials">
+                    <tr>
+                        <td><img class="supImg" src="https://images-na.ssl-images-amazon.com/images/I/51lAo3AgxgL._SX397_BO1,204,203,200_.jpg" alt=""></td>
+                        <td>
+                            <h4 class="reallyBig">Beginning JavaScript</h4>
+                            <h6 class="reallyKindaBig">Jeremy McPeak and Paul Wilton</h6>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </a>
+        <br>
+        <a href="https://www.amazon.com/Smarter-JavaScript-tech-assisted-approach-requires/dp/1497408180?tag=hackr-20&geniuslink=true" target="_blank">
+            <div class="supMatBord">
+                <table class="supMaterials">
+                    <tr>
+                        <td><img class="supImg" src="https://images-na.ssl-images-amazon.com/images/I/512KPmZIG7L._SX348_BO1,204,203,200_.jpg" alt=""></td>
+                        <td>
+                            <h4 class="reallyBig">A Smarter Way to Learn JavaScript</h4>
+                            <h6 class="reallyKindaBig">Mark Myers</h6>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </a>
+    </article>
+</body>
+
+</html>

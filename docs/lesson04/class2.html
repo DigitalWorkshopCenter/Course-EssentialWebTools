@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../site/fav.png" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/vs2015.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../site/global.js"></script>
+    <script>
+      hljs.highlightAll();
+      $(function () {
+        $('#includedHeader').load('../site/header.html');
+      });
+      window.onload = function () {
+        // load global variables
+        document.title = g.n04 + ' - Hands-on 2';
+      };
+    </script>
+  </head>
+
+  <body>
+    <div id="includedHeader"></div>
+    <article>
+      <h1>Hands-on Exercise 2<br />More Tests</h1>
+      <h2>Overview</h2>
+      <p>Now that you have written some tests, we are going to get more experience working with tests, async, props, mock data, and more.</p>
+      <h2>Instructions</h2>
+      <ul>
+        <li><p>Download <a href="class2.zip">This code</a></p></li>
+        <li><p>Run the following commands:<br>
+          <ul>
+            <li><p>npm install</p></li>
+            <li><p>npm install</p></li>
+            <li><p>npm test</p></li>
+          </ul>
+        </p></li>
+      </ul>
+      <p>Look through this project and investigate the code. Do your best to answer the following questions:</p>
+      <ul>
+        <li><p>What do you notice about the tests that are being run?</p></li>
+        <li><p>How is the data getting into the tests?</p></li>
+        <li><p>How is mock data being utilized?</p></li>
+        <li><p>What is the purpose of mock data?</p></li>
+        <li><p>Where can you find the official documentation for Jest?</p></li>
+        <li><p>How does create-react-app help us get started with testing?</p></li>
+        <li><p>Where can I find the documentation on the React-Testing-Library?</p></li>
+      </ul>
+    </article>
+  </body>
+</html>

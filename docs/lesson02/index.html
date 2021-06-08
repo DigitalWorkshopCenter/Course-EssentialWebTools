@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../site/fav.png" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../site/global.js"></script>
+    <script>
+      $(function () {
+        $('#includedHeader').load('../site/header.html');
+      });
+      window.onload = function () {
+        // load global variables
+        document.title = g.n02;
+        document.getElementById('g_u02').innerHTML = g.u02;
+        document.getElementById('g_reading').innerHTML = g.reading;
+        document.getElementById('g_classTime').innerHTML = g.classTime;
+        document.getElementById('g_assignment').innerHTML = g.assignment;
+        document.getElementById('g_t2_1').innerHTML = g.t2_1;
+        document.getElementById('g_t2_2').innerHTML = g.t2_2;
+        document.getElementById('g_t2_3').innerHTML = g.t2_3;
+        document.getElementById('g_t2_4').innerHTML = g.t2_4;
+        document.getElementById('g_t2_5').innerHTML = g.t2_5;
+        document.getElementById('g_t2_6').innerHTML = g.t2_6;
+        document.getElementById('g_t2_7').innerHTML = g.t2_7;
+        document.getElementById('g_t2_8').innerHTML = g.t2_8;
+        document.getElementById('g_t2_9').innerHTML = g.t2_9;
+      };
+    </script>
+  </head>
+
+  <body>
+    <div id="includedHeader"></div>
+    <article>
+      <h1 id="g_u02"></h1>
+      <h2>Summary</h2>
+      <p>The topics for this lesson are as follows:</p>
+      <ul>
+        <li>
+          <p id="g_t2_1"></p>
+        </li>
+        <li>
+          <p id="g_t2_2"></p>
+        </li>
+        <li>
+          <p id="g_t2_3"></p>
+        </li>
+        <li>
+          <p id="g_t2_4"></p>
+        </li>
+        <li>
+          <p id="g_t2_5"></p>
+        </li>
+        <li>
+          <p id="g_t2_6"></p>
+        </li>
+        <li>
+          <p id="g_t2_7"></p>
+        </li>
+        <li>
+          <p id="g_t2_8"></p>
+        </li>
+        <li>
+          <p id="g_t2_9"></p>
+        </li>
+      </ul>
+      <h2>Tasks</h2>
+      <ul>
+        <li>
+          <p><a href="reading.html" id="g_reading"></a></p>
+        </li>
+        <li>
+          <p><a href="class.html" id="g_classTime"> </a></p>
+        </li>
+        <li>
+          <p><a href="assignment.html" id="g_assignment"> </a></p>
+        </li>
+      </ul>
+    </article>
+  </body>
+</html>

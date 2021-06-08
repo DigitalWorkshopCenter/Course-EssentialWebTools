@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../site/fav.png" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/vs2015.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../site/global.js"></script>
+    <script>
+        hljs.highlightAll();
+        $(function () {
+            $("#includedHeader").load("../site/header.html");
+        });
+        window.onload = function () { // load global variables
+            document.title = g.u01;
+            document.getElementById('g_u01').innerHTML = g.u01;
+            document.getElementById('g_t1_0').innerHTML = g.t1_0;
+            document.getElementById('g_t1_1').innerHTML = g.t1_1;
+            document.getElementById('g_t1_2').innerHTML = g.t1_2;
+            document.getElementById('g_t1_3').innerHTML = g.t1_3;
+            document.getElementById('g_t1_4').innerHTML = g.t1_4;
+            document.getElementById('g_t1_5').innerHTML = g.t1_5;
+            document.getElementById('g_reading').innerHTML = g.reading;
+            
+        };
+    </script>
+</head>
+
+<body>
+    <div id="includedHeader"></div>
+    <article>
+        <h1 id="g_u01"></h1>
+        <h2 id="g_reading"></h2>
+        <p>The focus of this lesson will be three-fold. </p>
+        <ol>
+            <li><p>First, we will have a brief review of the concepts covered in the <code>JavaScriptI</code> course and ensure we are good to go there.</p></li>
+            <li><p>Then, we will go through so JavaScript best practices and programming tips and tricks</p></li>
+            <li><p>Lastly, we will dive deeper into other fundamental aspects of JavaScript.</p></li>
+        </ol>
+         </p>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingZero">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZero" aria-expanded="false" aria-controls="collapseZero">
+                    <h3 id='g_t1_0'></h3>
+                </button>
+                </h2>
+                <div id="collapseZero" class="accordion-collapse collapse" aria-labelledby="headingZero" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p><a href="review.html">JavaScript 1 Course Review</a></p>              
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <h3 id='g_t1_5'></h3>
+                </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                         <p>The purpose of the following video is to give you understanding of both the history of the web and of JavaScript.</p>               
+                         <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/Sh6lK57Cuk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <h3 id='g_t1_1'></h3>
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Much of this section is derived from <a href="https://www.educative.io/blog/javascript-tips-simplify-code" target="_blank">Educative</a>, <a href="https://www.w3schools.com/js/js_best_practices.asp" target="_blank">w3schools</a>, and <a href="https://www.w3.org/wiki/JavaScript_best_practices" target="_blank">w3 wiki</a>.           
+                        <h4>Declare and initialize your variables at the top</h4>
+                            <p>Nothing disrupts readability like a late declaration. Just as it’s easier to take out all your tools before starting a job, it’s simpler to declare all variables before getting into the nitty-gritty of your function. This gives easy access should we need to tweak any name or value later down the line.</p>
+                            <p>While on the topic of variables, it’s best practice to initialize your variables at the time of creation so you can ensure none are left <code> undefined</code>.</p>
+                        <h4>Build modular, specialized functions</h4>
+                            <p>No one function should have to do it all, for both efficiency and readability’s sake. Instead, when designing functions, consider a single task that it should accomplish and write it to complete that task only. Name the function to match that task.</p>
+                            <p>This makes the code easier for others to read. The function will inherently be simpler and less extensive if only working toward one task. Further, it allows you and your team to lift this function to another program should you need it later. Even with just the passed variable names and function titles, we get a clearer understanding of where to find certain tasks in the second version below. </p>
+                            <pre><code class="js">
+    function table (columns, rows, item){
+        // creates table and searches it for the passed item
+    }
+        
+    // compared to
+    
+    function createTable (columns, rows){
+        //creates table
+    }
+    
+    function searchTable (table.length, item) {
+        //searches table for the passed item
+    }                            
+                            </code></pre>
+                        <h4>Commend your code often</h4>
+                            <p>Comments are a great way to summarize a code fragment’s purpose, saving your fellow developers the time it would take to determine it on their own.</p>
+                            <p>It also allows them to catch possible mistakes if the code does not complete the task it is commented to complete. In general, it’s best to leave one comment on every function.</p>
+                            <p>If you’re unsure if you should leave a comment, just do it! It can always be deleted later if it’s too much clutter.</p>
+                        <h4>Avoid Global Variables!</h4>
+                            <p>In JavaScript, variables have a scope in which they can be used, either global or local. These scopes decide where in your code these variables are defined or can be accessed. Global variables can be defined anywhere in the program and exist outside of functions. Local variables are only visible within the function it is defined.</p>
+                            <p>If there are a local variable and a global variable with the same name, JavaScript will prioritize the local variable and ignore the global variable. Global variables should still be avoided, as they can accidentally overwrite window variables resulting in errors.</p>
+                            <p>Further, having many global variables will slow down your program since they are not deleted until the window is closed, whereas local variables are deleted once the function is completed.                            </p>
+                        <h4>Use template literals to combine strings</h4>
+                            <p>Putting strings together is a pain, especially when combining strings and variables. To make this process simpler, you can use template literals (marked by backticks), which take both a string and variable. Notice the difference in the following two examples: </p>
+                            <pre><code class="js">
+    function greet(name) {
+        return "Hi, " + name + "!"; // string concatenation
+    }
+
+    function greet(name) {
+        return `Hi, ${name}!`; // template literal
+    }
+                            </code></pre>
+                        <h4>Use array methods to avoid long loops</h4>
+                            <p>you can use array methods to accomplish similar effects as for loops with only a fraction of the lines. Take this for loop for example.</p>
+                            <pre><code class="js">
+    const prices = ['1.0', 'negotiable', '2.15'];
+
+    const formattedPrices = [];
+    for (let i = 0; i < prices.length; i++) {
+        const price = parseFloat(prices[i]);
+        if (price) {
+            formattedPrices.push(price);
+        }
+    }
+    console.log(formattedPrices);                            
+                            </code></pre>
+                            <p>Instead of the above code, we can get the same effect from three lines below by making use of the map method. This method creates an equivalently sized array with only the prices property. We then get float values of that price using the parseFloat.</p>
+                            <pre><code class="js">
+    const prices = ['1.0', '2.15'];
+    const formattedPrices = prices.map(price => parseFloat(price));
+    console.log(formattedPrices)
+                            </code></pre>
+                        <h4>Use the JavaScript Ternary Operator</h4>
+                            <p>Just like an if/else block of code, the ternary operator evaluates a condition and executes a block of code based on the condition. The syntax is as follows: </p>
+                            <pre><code class="js">
+    condition ? expression1 : expression2
+                            </code></pre>
+                            <p>The ternary operator evaluates the test condition.</p>
+                            <ul>
+                                <li><p>If the condition is true, expression1 is executed.</p></li>
+                                <li><p>If the condition is false, expression2 is executed.</p></li>
+                            </ul>
+                            <p>The ternary operator takes three operands, hence, the name ternary operator. It is also known as a conditional operator.</p>
+                            <p>Let's write a program to determine if a student passed or failed in the exam based on marks obtained.</p>
+                            <pre><code class="js">
+    // program to check pass or fail
+    let marks = prompt('Enter your marks :');
+    // check the condition
+    let result = (marks >= 40) ? 'pass' : 'fail';
+    console.log(`You ${result} the exam.`);
+                            </code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <h3 id='g_t1_2'></h3>
+                </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>There are so many tools at a programmer's disposal. It is likely impossible to be aware of all of them. However, there are several that you should be aware of. You should also get into the habit of searching new and improved ways to accomplish a task that you've been doing for a long time. </p>
+                        <p>You already been exposed to several tools that are helpful in web development such as VS Code, the Live Server Extension, git, Github and the git gui in VS Code, the developer tools in Google Chrome, the debugger in Chrome, etc. </p>
+                        <p>In this section, you will be introduced to several VS Code extensions that can boost productivity and code maintenance ease. </p>
+                        <h4>You can find more information on the following extensions and many more <a href="https://www.sitepoint.com/vs-code-extensions-javascript-developers/">Here</a>.</h4>
+                        <h2 id="snippetextensions">Snippet Extensions</h2>
+<p>When you first install VS Code, it comes with a several built-in snippets for JavaScript and Typescript. Snippets help you write repetitive code quickly. However, you may find these may not be enough. You can easily create your own, or you can simply install an extension that includes a bunch of new useful snippets. A quick tip if you want snippets to show on top of suggestions is to use this configuration:</p>
+<pre tabindex="0" class=" language-javascript"><code class="javascript  language-javascript"><span class="token punctuation">{</span>
+  <span class="token string">"editor.snippetSuggestions"</span><span class="token operator">:</span> <span class="token string">"top"</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Here are some of the most popular snippet extensions for JavaScript developers. However, I would recommend you install just one for simplicity’s sake.</p>
+<ul><li>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets">JavaScript (ES6) code snippets</a>, by Charalampos Karypidis. This is currently the most popular javaScript snippet extension with over 3+ million installs to date. This extension provides ES6 syntax for JavaScript, TypeScript, HTML, React and Vue. All snippets include a final semicolon.</p>
+</li>
+<li>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=jmsv.JavaScriptSnippetsStandard">JavaScript (ES6) code snippets in StandardJS style</a>, by James Vickery. This is basically a fork of the above extension for those who prefer <a href="https://standardjs.com/rules-en.html">StandardJS style convention</a>—that is, the snippets don’t have semicolons.</p>
+</li>
+<li>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=capaj.vscode-standardjs-snippets">JavaScript standardjs styled snippets</a>, by capaj. Another StandardJS Styled snippets but this one is more popular with over 72k installs. Originally forked from <a href="https://github.com/gaboesquivel/atom-standardjs-snippets">Atom StandardJS snippets</a>. Contains a huge collection of handy snippets and supports JavaScript, TypeScript and React.</p>
+</li>
+<li>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=nathanchapman.JavaScriptSnippets">JavaScript Snippets</a>, by Nathan Chapman. A collection of JavaScript snippets with about 33k+ installs to date. This snippet extension supports Node.js, BDD Testing frameworks such as Mocha and Jasmine.</p>
+</li>
+<li>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=gluons.vscode-atom-javascript-snippet">Atom JavaScript Snippet</a>, by Saran Tanpituckpong. With about 26k+ installs to date, the snippets in this extension were ported from <code>atom/language-javascript</code>. JavaScript snippets ported from the atom/language-javascript extension.</p>
+</li>
+</ul><h2 id="syntaxhighlightingextensions">Syntax Highlighting Extensions</h2>
+<p>The latest version of VS Code supports better syntax colorization and is now more in line with the standards set in Atom grammar. Hence, extensions such as <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.js-atom-grammar">JavaScript Atom Grammar</a> are no longer needed.</p>
+<p>However, we still have a few syntax highlighting extensions that are quite useful when it comes to certain types of projects and file extensions. Here’s a few:</p>
+<ul><li>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel">Babel JavaScript</a>, by Michael McDermott. With over 550k+ installs to date, this extension provides syntax highlighting for ES201x JavaScript, React, FlowType and GraphQL code.</p><div class="proper-ad-unit">
+          <div id="proper-ad-sitepoint_content_1" class="sitepoint_content"></div>
+        </div><p></p>
+</li>
+<li>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv">DotENV</a>, by 833,737. With over 833k installs to date, this extension supports syntax highlighting for environment settings — that is, <code>.env</code> files.</p>
+</li>
+<li>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2">Bracket Pair Colorizer 2</a>, by CoenraadS. With 730k+ installs, this extension highlights matching brackets with different colors, helping you identify which bracket belongs to which block.</p>
+</li>
+</ul><h2 id="linterextensions">Linter Extensions</h2>
+<p>Have you have ever gotten into a debate with your teammates over <a href="https://www.youtube.com/watch?v=SsoOG6ZeyUI">tabs vs spaces</a> or semicolons vs no semicolons? You’ll realize that people have strong opinions about which coding style to use. Nevertheless, everyone on the same team needs to use the same coding style regardless of their opinion.</p>
+<p>However, it’s quite common for programmers to forget which coding styling they agreed to work with. To enforce the rules, we need to use <strong>linters</strong> that compare your code with the rules you’ve established. You define your rules by picking a popular coding style such as <a href="https://standardjs.com">Standard</a>, <a href="https://google.github.io/styleguide/jsguide.html">Google</a>, and <a href="https://github.com/airbnb/javascript">Airbnb</a>. You can use them as is or use a configuration file to customize the rules. VS Code doesn’t have a built-in JavaScript linter, so you’ll need to install an extension.</p>
+<p>Here are the extensions we have available:</p>
+<ul><li>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">ESLint</a>, by Dirk Baeumer. With over 8 million installs, this is the most popular extension providing support for the <a href="https://eslint.org/">ESLint</a> library. In order for the extension to work, your project will need ESLint packages and plugins installed. You’ll also need to specify an <code>.eslintrc</code>, which will specify the rules the extension will use to lint your code .</p>
+</li>
+<li>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint">JSHint</a>, by Dirk Baeumer. With 1.2M+ installs, this extension supports linting with the <a href="https://jshint.com/install/">JSHint</a> library. A <code>.jshintrc</code> configuration file is required for the extension to lint your code.</p>
+</li>
+<li>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=chenxsan.vscode-standardjs">StandardJS – JavaScript Standard Style</a>, by Sam Chen. This extension (259k+ installs) simply integrates <a href="https://github.com/standard/standard">JavaScript Standard Style</a> into VS Code. You’ll need to install <code>standard</code> or <code>semiStandard</code> as a dev dependency in your project. No configuration file is required. You’ll need to disable VS Code’s built-in validator for this extension to work.</p>
+</li>
+<li>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=ajhyndman.jslint">JSLint</a>, by Andrew Hyndman. This extension provides linting with the <a href="http://jslint.com/help.html">JSLint</a> library. You’ll need to install <code>jslint</code> locally or globally for the extension to work. It has 109k+ installs to date.</p>
+</li>
+</ul><p>If you’d like an overview of available linters and their pros and cons, check out our <a href="https://www.sitepoint.com/comparison-javascript-linting-tools/">comparison of JavaScript linting tools</a>.</p>
+<h2 id="formattingextensions">Formatting Extensions</h2>
+<p>More often than not, we sometimes write code that’s out of alignment with the rest of the code. To fix this, we need to go back and fix the indentation in each line. In addition, we need to ensure braces and tags are properly formatted in a readable format. This process can quickly get tedious.</p>
+<p>Luckily, we have extensions that can do the work for us. Please note extensions such as <code>Prettier</code> and <code>Beautify</code> can’t both be active simultaneously.</p>
+<ul><li>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier Code Formatter</a>, by Esben Petersen. This is the most popular extension that supports formatting of JavaScript, TypeScript and CSS using <a href="https://github.com/prettier/prettier">Prettier</a>. It has over 5.7 million installs to date. It’s recommended you install <code>prettier</code> locally as a dev dependency.</p>
+</li>
+<li>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify">Beautify</a>, by HookyQR. A <a href="http://jsbeautifier.org/">jsBeautifier</a> extension that supports JavaScript, JSON, CSS and HTML. It can be customized via a <code>.jsbeautifyrc</code> file. It’s now the second most popular formatter, with 4.4 million installs to date.</p>
+</li>
+<li>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=cmstead.jsrefactor">JS Refactor</a>, by Chris Stead. This provides a number of utilities and actions for refactoring JavaScript code, such as extracting variables/methods, converting existing code to use arrow functions or template literals, and exporting functions. It has 140k+ installs to date.</p>
+</li>
+<li>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=sburg.vscode-javascript-booster">JavaScript Booster</a>, by Stephan Burguchev. This is an amazing code refactoring tool. It features several coding actions such as converting <code>var</code> to <code>const</code> or <code>let</code>, removing redundant <code>else</code> statements, and merging declaration and initialization. Largely inspired by <a href="https://www.jetbrains.com/webstorm/">WebStorm</a>, it has 74k+ installs to date.</p>
+</li>
+</ul><figure><img class="img-tutorial" src="https://uploads.sitepoint.com/wp-content/uploads/2019/03/1587002116features.gif" alt="JavaScript Booster Demo" loading="lazy"><figcaption style="text-align:center; font-size:0.8em; margin: 12px 0 20px"> Source: <a href="https://github.com/xsburg/vscode-javascript-booster">vscode-javascript-booster</a></figcaption></figure><h2 id="browserextensions">Browser Extensions</h2>
+<p>Unless you’re writing a console program in JavaScript, you’ll most likely be executing your JavaScript code inside a browser. This means you’ll need to frequently refresh the page to see the effect of each code update you make. Instead of doing this manually all the time, here are a few tools that can significantly reduce the development time of your iteration process:</p><div class="roller-door-placeholder"></div>
+<ul><li><a href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome">Debugger for Chrome</a>, by Microsoft. With over 5.2+ million installs, this extension allows you to debug your JavaScript code in Chrome, or any other target that supports the Chrome Debugger Protocol. If you’re new to this extension and debugging in VS Code, do check out our <a href="https://www.sitepoint.com/debugging-javascript-projects-vs-code-chrome-debugger/">VS Code and Chrome debugging tutorial</a>.</li>
+</ul><figure><img class="img-tutorial" src="https://github.com/Microsoft/vscode-chrome-debug/blob/master/images/demo.gif?raw=true" alt="Debugger for Chrome Demo" loading="lazy"><figcaption style="text-align:center; font-size:0.8em; margin: 12px 0 20px"> Source: <a href="https://github.com/Microsoft/vscode-chrome-debug">vscode-chrome-debug</a></figcaption></figure><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a>, by Ritwick Dey. This extension allows you to launch a local development server with a live reload feature for static and dynamic pages. It has 4.6M+ install to date.</li>
+</ul><figure><img class="img-tutorial" src="https://uploads.sitepoint.com/wp-content/uploads/2019/03/1587002342vscode-live-server-animated-demo.gif" alt="Live server demo" loading="lazy"><figcaption style="text-align:center; font-size:0.8em; margin: 12px 0 20px"> Source: <a href="https://github.com/ritwickdey/vscode-live-server">vscode-chrome-debugvscode-live-server</a></figcaption></figure><ul><li>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=yuichinukiyama.vscode-preview-server">Preview on Web Server</a>, by YuichiNukiyama. This provides web server and live preview of HTML. The features can be called from a context menu or editor menu. It has 120k+ installs to date.</p><div class="proper-ad-unit">
+          <div id="proper-ad-sitepoint_content_3" class="sitepoint_content"></div>
+        </div><p></p>
+</li>
+<li>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=humao.rest-client">Rest Client</a>, by Huachao Mao. Instead of using a browser or a CURL program to test your REST API endpoints, you can install this tool to interactively run HTTP requests right inside the editor. It has 834k+ installs to date.</p>
+</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <h3 id='g_t1_3'></h3>
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>As our application grows bigger, we want to split it into multiple files, so called “modules”. A module may contain a class or a library of functions for a specific purpose.</p>
+                        <p>For a long time, JavaScript existed without a language-level module syntax. That wasn’t a problem, because initially scripts were small and simple, so there was no need.</p>
+                        <p>But eventually scripts became more and more complex, so the community invented a variety of ways to organize code into modules, special libraries to load modules on demand.</p>
+                        <p>Now all these slowly become a part of history, but we still can find them in old scripts.</p>
+                        <p>The language-level module system appeared in the standard in 2015, gradually evolved since then, and is now supported by all major browsers and in Node.js. So we’ll study the modern JavaScript modules from now on.</p>
+                        <h2><a class="main__anchor" name="what-is-a-module" href="#what-is-a-module">What is a module?</a></h2><p>A module is just a file. One script is one module. As simple as that.</p>
+                        <p>Modules can load each other and use special directives <code>export</code> and <code>import</code> to interchange functionality, call functions of one module from another one:</p>
+                        <ul>
+                        <li><code>export</code> keyword labels variables and functions that should be accessible from outside the current module.</li>
+                        <li><code>import</code> allows the import of functionality from other modules.</li>
+                        </ul>
+                        <p>For instance, if we have a file <code>sayHi.js</code> exporting a function:</p> 
+                        <pre><code class="js">
+    export function sayHi(user) {
+        alert(`Hello, ${user}!`);
+    }
+                        </code></pre> 
+                        <p>…Then another file may import and use it:</p>            
+                        <pre><code class="js">
+    import {sayHi} from './sayHi.js';
+    alert(sayHi); // function...
+    sayHi('John'); // Hello, John!
+                        </code></pre>
+                        <p>This process can be extremely helpful as our applications grow in size and as we want to reuse more functions in our code. By using modules, we don't have to write the same code twice, we can write it once, export it, then use it as many times as we want.</p>
+                        <p>This video (less than 2 minutes) may be helpful to understand modules a little more fully</p>
+                        <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/qgRUr-YUk1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        <a href="class1.html">
+                            <div class="classActivity">
+                                <h5>Hands-on exercise 1 - Creating Modules</h5>
+                            </div>
+                        </a>
+                        <a href="class2.html">
+                            <div class="classActivity">
+                                <h5>Hands-on exercise - Working with Modules</h5>
+                            </div>
+                        </a>
+                        <a href="class3.html">
+                            <div class="classActivity">
+                                <h5>Hands-on exercise - More Practice with Modules</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <h3 id='g_t1_4'></h3>
+                </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h2>Why do we need callbacks?</h2>
+                        <p>First, it is important to understand why JavaScript callbacks are needed. <a href="https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced" target="_blank">This article</a> explains this need very well. But basically, many of the functions that you write in JavaScript will take time to complete. For example, let's think about our gmail inbox. I go to mail.google.com. After I log in, there is a function to retrieve (from a database) all of my pertinent messages. Then there is a function that will be called to display that data on the page. Imagine if the display function ran before the retrieve function. After the data was retrieved, there would be nothing to make it be displayed. </p>
+                        <p>Some programmers will use what is called a <code>timeout</code> to get around this issue but it is very poor practice. A timeout allows you to specify a fixed duration of time until you run another function. This is no good because you never know how quickly or how long something will take to complete its execution. On the one hand, if you make a timeout for too long, the user will wait longer than necessary. On the other hand, if you make the timer too short, then it will have failed in its purpose. You can never be right on. For this reason among many others, we need a way to tell JavaScript to execute functions based on certain events. To understand this a little further, look at these examples from <a href="https://www.w3schools.com/js/js_callback.asp" target="_blank">w3schools</a>.</p>
+                        <h2>JavaScript Function Sequence</h2>
+                        <p>To help us understand the importance of callback functions, we need to first review how JavaScript functions work.</p>
+                        <p>JavaScript functions are executed in the sequence they are called. Not in the sequence they are defined. This example will end up displaying "Goodbye":</p>
+                        <pre><code class="js">
+    function myDisplayer(some) {
+        document.getElementById("demo").innerHTML = some;
+    }
+    
+    function myFirst() {
+        myDisplayer("Hello");
+    }
+    
+    function mySecond() {
+        myDisplayer("Goodbye");
+    }
+
+    myFirst();
+    mySecond();
+                        </code></pre>
+                        <p>This example will end up displaying "Hello":</p>
+                        <pre><code class="js">
+    function myDisplayer(some) {
+        document.getElementById("demo").innerHTML = some;
+    }
+    
+    function myFirst() {
+        myDisplayer("Hello");
+    }
+    
+    function mySecond() {
+        myDisplayer("Goodbye");
+    }
+    
+    mySecond();
+    myFirst();
+                        </code></pre>
+                        <h5>Sequence Control</h5>
+                        <p>Sometimes you would like to have better control over when to execute a function. Suppose you want to do a calculation, and then display the result. You could call a calculator function (myCalculator), save the result, and then call another function (myDisplayer) to display the result:</p>
+                        <pre><code class="js">
+    function myDisplayer(some) {
+        document.getElementById("demo").innerHTML = some;
+    }
+    
+    function myCalculator(num1, num2) {
+        let sum = num1 + num2;
+        return sum;
+    }
+    
+    let result = myCalculator(5, 5);
+    myDisplayer(result);
+                        </code></pre>
+                        <p>Or, you could call a calculator function (myCalculator), and let the calculator function call the display function (myDisplayer):</p>
+                        <pre><code class="js">
+    function myDisplayer(some) {
+        document.getElementById("demo").innerHTML = some;
+    }
+    
+    function myCalculator(num1, num2) {
+        let sum = num1 + num2;
+        myDisplayer(sum);
+    }
+    
+    myCalculator(5, 5);
+                        </code></pre>
+                        <p>The problem with the first example above, is that you have to call two functions to display the result. The problem with the second example, is that you cannot prevent the calculator function from displaying the result. Now it is time to bring in a callback.</p>
+                        <h2>Callback Functions</h2>
+                        <p><code>A callback is a function passed as an argument to another function.</code></p>
+                        <p>Using a callback, you could call the calculator function (myCalculator) with a callback, and let the calculator function run the callback after the calculation is finished:</p>
+                        <pre><code class="js">
+    function myDisplayer(some) {
+        document.getElementById("demo").innerHTML = some;
+    }
+    
+    function myCalculator(num1, num2, myCallback) {
+        let sum = num1 + num2;
+        myCallback(sum);
+    }
+    
+    myCalculator(5, 5, myDisplayer);
+                        </code></pre>
+                        <p>In the example above, myDisplayer is the name of a function. It is passed to myCalculator() as an argument.</p>
+                        <p>When you pass a function as an argument, remember not to use parenthesis.</p>
+                        <ul>
+                            <li><p>Right: myCalculator(5, 5, myDisplayer);</p></li>
+                            <li><p>Wrong: myCalculator(5, 5, myDisplayer());</p></li>
+                        </ul>
+                            
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </article>
+</body>
+
+</html>

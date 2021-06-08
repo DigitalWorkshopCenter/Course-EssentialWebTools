@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../site/fav.png" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../site/global.js"></script>
+    <script>
+      $(function () {
+        $('#includedHeader').load('../site/header.html');
+      });
+      window.onload = function () {
+        // load global variables
+        document.title = g.n05 + ' Class';
+        document.getElementById('g_classTime').innerHTML =
+          g.n05 + ' ' + g.classTime;
+      };
+    </script>
+  </head>
+
+  <body>
+    <div id="includedHeader"></div>
+    <article>
+      <h1 id="g_classTime"></h1>
+      <h2>Overview</h2>
+      <p>In class today, we will take a couple minutes to complete the <a href="digitalworkshopcenter.com/feedback" target="_blank">DWC Feedback Survey</a>.</p>
+    </article>
+  </body>
+</html>

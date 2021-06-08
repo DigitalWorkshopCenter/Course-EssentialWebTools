@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../site/fav.png" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/vs2015.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../site/global.js"></script>
+    <script>
+      hljs.highlightAll();
+      $(function () {
+        $('#includedHeader').load('../site/header.html');
+      });
+      window.onload = function () {
+        // load global variables
+        document.title = g.u02;
+        document.getElementById('g_u02').innerHTML = g.u02;
+        document.getElementById('g_t2_1').innerHTML = g.t2_1;
+        document.getElementById('g_t2_2').innerHTML = g.t2_2;
+        document.getElementById('g_t2_3').innerHTML = g.t2_3;
+        document.getElementById('g_t2_4').innerHTML = g.t2_4;
+        document.getElementById('g_t2_5').innerHTML = g.t2_5;
+        document.getElementById('g_t2_6').innerHTML = g.t2_6;
+        document.getElementById('g_t2_7').innerHTML = g.t2_7;
+        document.getElementById('g_t2_8').innerHTML = g.t2_8;
+        document.getElementById('g_t2_9').innerHTML = g.t2_9;
+        document.getElementById('g_reading').innerHTML = g.reading;
+
+        var d = new Date();
+        let y = d.getFullYear();
+        document.getElementById('currentYear').innerHTML = y;
+        let search = `Top JS Frameworks of ${y}`;
+        let a = document.createElement('a');
+        a.append(document.createTextNode(search));
+        a.href = `https://www.google.com/search?q=${search}`;
+        a.target = '_blank';
+        document.getElementById('googleSearch').appendChild(a);
+      };
+    </script>
+  </head>
+
+  <body>
+    <div id="includedHeader"></div>
+    <article>
+      <h1 id="g_u02"></h1>
+      <h2 id="g_reading"></h2>
+      <p>
+        This lesson will introduce a lot of new content. The goal is to
+        introduce you to these frameworks so that you know of their existence
+        and a bit of what they can do. While links are included below to start
+        learning each of the frameworks, we will only focus on one of them for
+        our assignments and activities for the remainder of this course.
+      </p>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="false"
+              aria-controls="collapseOne"
+            >
+              <h3 id="g_t2_1"></h3>
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <h6>
+                Much of this section was derived from
+                <a
+                  href="https://skillcrush.com/blog/what-is-a-javascript-framework/"
+                  target="_blank"
+                  >skillcrush</a
+                >.
+              </h6>
+              <p>
+                Whether you’re learning to code enroute to a full-time career as
+                a web developer or stockpiling tech skills to start
+                <a
+                  href="https://skillcrush.com/blog/tech-side-hustles/"
+                  target="_blank"
+                  >a lucrative side hustle</a
+                >,
+                <a
+                  href="https://skillcrush.com/blog/javascript/"
+                  target="_blank"
+                  >JavaScript</a
+                >—a scripting language used to create and control dynamic web
+                components (things like photo slideshows, animated graphics, and
+                interactive forms)—needs to be high on your list of front-end
+                development skills to learn.
+              </p>
+              <p>
+                Because JavaScript (or JS) is at the heart of web development,
+                it’s not surprising that it’s also at the forefront of developer
+                jobs—<a
+                  href="https://www.indeed.com/q-Javascript-jobs.html"
+                  target="_blank"
+                  >a search on jobs site Indeed</a
+                >
+                for
+                <a
+                  href="https://skillcrush.com/blog/javascript-jobs/"
+                  target="_blank"
+                  >JavaScript jobs</a
+                >
+                returns nearly 40,000 results as of this writing, with
+                <a
+                  href="https://www.glassdoor.com/Salaries/javascript-developer-salary-SRCH_KO0,20.htm"
+                  target="_blank"
+                  >Glassdoor reporting average base salaries for JavaScript
+                  developers at $72,500</a
+                >.
+              </p>
+              <p>
+                When you start working with JavaScript you’ll soon see
+                references to things called JavaScript frameworks. Whether these
+                references are in
+                <a
+                  href="https://www.indeed.com/q-Javascript-Framework-jobs.html"
+                  target="_blank"
+                  >job listings</a
+                >,
+                <a
+                  href="https://stackoverflow.com/questions/tagged/javascript-framework"
+                  target="_blank"
+                  >front-end developer forums</a
+                >, or
+                <a
+                  href="https://www.wired.com/2016/05/javascript-conquered-web-now-taking-desktop/"
+                  target="_blank"
+                  >articles about JavaScript</a
+                >, everyone seems to champion JS frameworks—but what<em> is</em>
+                a framework?
+              </p>
+              <p>
+                In order to answer this burning question, we’re providing you
+                with a newbie-proof definition of what JS frameworks actually
+                are.
+              </p>
+              <h2>What is a JavaScript Framework?</h2>
+              <p>
+                Think of building websites and web apps like building a
+                house—when you set out to build a house, you could create all of
+                your own building materials from scratch and start building
+                without any schematics, but that approach would be incredibly
+                time-consuming and doesn’t make a lot of sense. It’s more likely
+                that you would purchase pre-manufactured building materials
+                (wood, bricks, countertops, etc.) and then assemble them based
+                on a blueprint to fit your specific needs.
+              </p>
+              <p>
+                Coding is very similar. When you set out to code a website, you
+                could code every aspect of that site from scratch, but there are
+                certain common website features that make more sense to apply
+                from a template—if you need a wheel, for instance, it’s a lot
+                more sensible to buy one than it is to reinvent it. And that’s
+                where JavaScript frameworks come into play.
+              </p>
+              <blockquote>
+                <p>
+                  At their most basic, JS frameworks are collections of
+                  JavaScript code libraries (see below) that provide developers
+                  with pre-written JS code to use for routine programming
+                  features and tasks—literally a framework to build websites or
+                  web applications around.
+                </p>
+              </blockquote>
+              <p>
+                If you need a standard JavaScript photo carousel on a webpage,
+                for instance, you can use code from a framework to provide the
+                feature for you (while you spend more time on coding the unique
+                aspects of your site that don’t have an easy, plugin solution).
+                If you’ve heard of the singular JavaScript library jQuery, this
+                might sound familiar, but there’s a small (yet important)
+                distinction when it comes to singular JavaScript libraries
+                versus JavaScript frameworks.
+              </p>
+              <h2>jQuery and JavaScript Libraries</h2>
+              <p>
+                <a href="https://skillcrush.com/blog/what-is-jquery-used-for/"
+                  >JS libraries like jQuery</a
+                >
+                are used by plugging library code into the rest of your site’s
+                code when needed.
+              </p>
+              <p>
+                If you want to use a jQuery template for an autocomplete
+                feature, for instance, you would insert the appropriate jQuery
+                code, which then retrieves the feature from the jQuery library
+                and displays it on your user’s web browser.
+              </p>
+              <p>
+                In other words, when a front-end developer uses a library like
+                jQuery, the developer is using jQuery code to “call” the jQuery
+                library, which then provides the requested content.
+              </p>
+              <h2>
+                What Makes JavaScript Frameworks Different From Libraries?
+              </h2>
+              <p>
+                When you&#8217;re trying to define framework in the context of
+                library vs framework, think of it like this: when you use JS
+                frameworks the process is more holistic—a framework doesn’t just
+                offer an individual solution to a coding problem, it provides a
+                structure (like a skeleton or a scaffolding&#8230;or a
+                framework) that organizes the parts of your site where the
+                framework is implemented.
+              </p>
+              <p>
+                This structure comes via page templates with areas set aside for
+                code from the framework’s libraries (which the JavaScript
+                framework “calls” on its own).
+              </p>
+              <p>
+                The upside to using JavaScript frameworks is the overall
+                efficiency and organization that they bring to a project—your
+                code will be neatly structured, and the framework will provide
+                readymade solutions for common coding problems.
+              </p>
+              <p>
+                On the other hand, all of that structure can be the downside of
+                working with a framework—any JavaScript code you write on top of
+                JS frameworks needs to follow rules and conventions specific to
+                the framework, limiting the freedom you have when coding
+                entirely by hand.
+              </p>
+              <h2>Are JavaScript Frameworks an All or Nothing Solution?</h2>
+              <p>
+                With those limitations in mind, does using JavaScript frameworks
+                mean the framework structure has to be applied your entire site?
+              </p>
+              <p>It depends.</p>
+              <p>
+                While some frameworks are designed to live underneath all of
+                your site or web app’s code, other frameworks—like the
+                increasingly popular Vue (see below)—allow for incremental use.
+              </p>
+              <p>
+                This means you can apply the framework to as much or as little
+                of your website or web app as you want. As more frameworks have
+                adopted this incremental model, JS frameworks have become an
+                increasingly flexible way to provide structure when appropriate,
+                while still giving front-end developers the freedom to hand-code
+                when necessary.
+              </p>
+              <h2>Where to Now?</h2>
+              <p>
+                Now that you understand a bit of what JavaScript Frameworks are,
+                it is time to get introduced to some of them. There are many,
+                and they are always evolving — adapting to present needs, and
+                competing with one another to meet the highest demand in the
+                market. This is great because web developers can rely on the
+                fact that these frameworks will continue to grow in efficiency
+                and in their product offerings. With that said, they are always
+                changing, so developers have to do the work to stay up to speed
+                with the latest trends and changes. The following frameworks are
+                the most widely used and most popular as of
+                <span id="currentYear"></span>.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              <h3 id="g_t2_2"></h3>
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <h6>
+                Just about everything in this section is straight from the
+                source,
+                <a href="https://angular.io/docs" target="_blank">
+                  Angular's documentation</a
+                >.
+              </h6>
+              <h2>Why Use Angular?</h2>
+              <p>
+                From the
+                <a href="https://angular.io/" target="_blank">homepage</a> of
+                Angular's site, they market their product as follows:
+              </p>
+              <h4>Develop Across All Platforms</h4>
+              <p>
+                DEVELOP ACROSS ALL PLATFORMS Learn one way to build applications
+                with Angular and reuse your code and abilities to build apps for
+                any deployment target. For web, mobile web, native mobile and
+                native desktop.
+              </p>
+              <h4>Speed & Performance</h4>
+              <p>
+                Achieve the maximum speed possible on the Web Platform today,
+                and take it further, via Web Workers and server-side rendering.
+                Angular puts you in control over scalability. Meet huge data
+                requirements by building data models on RxJS, Immutable.js or
+                another push-model.
+              </p>
+              <h4>Incredible Tooling</h4>
+              <p>
+                Build features quickly with simple, declarative templates.
+                Extend the template language with your own components and use a
+                wide array of existing components. Get immediate
+                Angular-specific help and feedback with nearly every IDE and
+                editor. All this comes together so you can focus on building
+                amazing apps rather than trying to make the code work.
+              </p>
+              <h4>Loved By Millions</h4>
+              <p>
+                From prototype through global deployment, Angular delivers the
+                productivity and scalable infrastructure that supports Google's
+                largest applications.
+              </p>
+              <h2>What is Angular?</h2>
+              <p>
+                <a
+                  href="https://angular.io/guide/what-is-angular"
+                  target="_blank"
+                  >What is Angular?</a
+                >
+                from the Angular's website covers the following topics:
+              </p>
+              <ul>
+                <li><p>What is Angular?</p></li>
+                <li><p>Angular applications: The essentials</p></li>
+                <li><p>Components</p></li>
+                <li><p>Templates</p></li>
+                <li><p>Dependency Injection</p></li>
+                <li><p>Angular CLI</p></li>
+                <li><p>First-party Libraries</p></li>
+                <li><p>Next Steps</p></li>
+              </ul>
+              <iframe
+                width="560"
+                height="315"
+                class="img-tutorial"
+                src="https://www.youtube.com/embed/Ata9cSC2WpM"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <h2>How to Start Learning Angular?</h2>
+              <p>
+                The Angular folk made a great
+                <a href="https://angular.io/start" target="_blank"
+                  >starter app/tutorial</a
+                >
+                to help anyone who wants to, to learn how to use Angular with a
+                very hands-on approach.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              <h3 id="g_t2_3"></h3>
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <h6>
+                Just about everything in this section is straight from the
+                source,
+                <a
+                  href="https://reactjs.org/docs/getting-started.html"
+                  target="_blank"
+                >
+                  React's documentation</a
+                >.
+              </h6>
+              <h2>Why Use React?</h2>
+              <p>
+                From the
+                <a href="https://reactjs.org/" target="_blank">homepage</a> of
+                React's site, they market their product as follows:
+              </p>
+              <h4>Declarative</h4>
+              <p>
+                React makes it painless to create interactive UIs. Design simple
+                views for each state in your application, and React will
+                efficiently update and render just the right components when
+                your data changes. Declarative views make your code more
+                predictable and easier to debug.
+              </p>
+              <h4>Component-Based</h4>
+              <p>
+                Build encapsulated components that manage their own state, then
+                compose them to make complex UIs. Since component logic is
+                written in JavaScript instead of templates, you can easily pass
+                rich data through your app and keep state out of the DOM.
+              </p>
+              <h4>Learn Once, Write Anywhere</h4>
+              <p>
+                We don’t make assumptions about the rest of your technology
+                stack, so you can develop new features in React without
+                rewriting existing code. React can also render on the server
+                using Node and power mobile apps using
+                <a href="https://reactnative.dev/" target="_blank"
+                  >React Native</a
+                >.
+              </p>
+              <h4>First Concepts</h4>
+              <p>The Reactjs.org website then shows how to:</p>
+              <ul>
+                <li>
+                  <p>
+                    <a
+                      href="https://reactjs.org/#a-simple-component"
+                      target="_blank"
+                      >Create a Simple Component</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a
+                      href="https://reactjs.org/#a-stateful-component"
+                      target="_blank"
+                      >Create a Stateful Component</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a
+                      href="https://reactjs.org/#an-application"
+                      target="_blank"
+                      >Create an Application</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a
+                      href="https://reactjs.org/#a-component-using-external-plugins"
+                      target="_blank"
+                      >Create a Component Using External Plugins</a
+                    >
+                  </p>
+                </li>
+              </ul>
+              <iframe
+                width="560"
+                height="315"
+                class="img-tutorial"
+                src="https://www.youtube.com/embed/Tn6-PIqc4UM"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <h2>How to Start Learning React?</h2>
+              <p>
+                <a
+                  href="https://reactjs.org/docs/getting-started.html"
+                  target="_blank"
+                  >Here is the guide</a
+                >
+                to get started with your first React Application. Know that you
+                can add react to any application that is already existing by
+                simply adding components. Whereas with Angular, the entire
+                application needs to be built on the Angular architecture.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              <h3 id="g_t2_4"></h3>
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <h6>
+                Just about everything in this section is straight from the
+                source,
+                <a href="https://vuejs.org/v2/guide/" target="_blank">
+                  Vue's documentation</a
+                >.
+              </h6>
+              <h2>Why Use Vue?</h2>
+              <p>
+                From the
+                <a href="https://vuejs.org/" target="_blank">homepage</a> of
+                Vue's site, they market their product as follows:
+              </p>
+              <h4>Approachable</h4>
+              <p>
+                Already know HTML, CSS and JavaScript? Read the guide and start
+                building things in no time!
+              </p>
+              <h4>Versatile</h4>
+              <p>
+                An incrementally adoptable ecosystem that scales between a
+                library and a full-featured framework.
+              </p>
+              <h4>Performant</h4>
+              <p>
+                20KB min+gzip Runtime Blazing Fast Virtual DOM Minimal
+                Optimization Efforts
+              </p>
+              <h2>What is Vue.js?</h2>
+              <p>
+                Vue (pronounced /vjuː/, like view) is a progressive framework
+                for building user interfaces. Unlike other monolithic
+                frameworks, Vue is designed from the ground up to be
+                incrementally adoptable. The core library is focused on the view
+                layer only, and is easy to pick up and integrate with other
+                libraries or existing projects. On the other hand, Vue is also
+                perfectly capable of powering sophisticated Single-Page
+                Applications when used in combination with modern tooling and
+                supporting libraries.
+              </p>
+
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/nhBVL41-_Cw"
+                title="YouTube video player"
+                class="img-tutorial"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <h2>How to Start Learning Vue.js?</h2>
+              <p>
+                The Vue folk made a great
+                <a
+                  href="https://v3.vuejs.org/guide/introduction.html#getting-started"
+                  target="_blank"
+                  >tutorial</a
+                >
+                to help anyone who wants to, to learn how to use Vue with a very
+                hands-on approach.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              <h3 id="g_t2_5"></h3>
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <h6>
+                Just about everything in this section is straight from the
+                source,
+                <a href="https://guides.emberjs.com/release/" target="_blank">
+                  Ember's documentation</a
+                >.
+              </h6>
+              <h2>Why Use Ember?</h2>
+              <p>
+                From the
+                <a href="https://emberjs.com/" target="_blank">homepage</a> of
+                Ember's site, they market their product as follows:
+              </p>
+              <h4>A Framework for ambitious web developers</h4>
+              <p>
+                Ember.js is a productive, battle-tested JavaScript framework for
+                building modern web applications. It includes everything you
+                need to build rich UIs that work on any device.
+              </p>
+              <h4>Build with the teams that never stop shipping.</h4>
+              <p>
+                Some of the best development teams in the world have been
+                iterating on their products for years with Ember. With scalable
+                UI architecture baked-in from the start, you'll be working with
+                the same patterns these organizations use every step of the way.
+              </p>
+              <h4>Batteries are included</h4>
+              <p>
+                Ember’s out-of-the-box experience has everything you need to
+                start building on day one and keep shipping for years. Benefit
+                from our years of experience to help your team be
+                productive—faster. You'll never have to wire together your own
+                framework ever again!
+              </p>
+              <h4>Build pipeline</h4>
+              <p>
+                Ember CLI is the backbone of modern Ember apps, providing code
+                generators to create new entities and putting the necessary
+                files in the right place, every time. Ember apps come with a
+                built-in development environment with fast rebuilds,
+                auto-reload, and a test runner! Ready to deploy? That's easy,
+                too— build your app for production with a single command.
+              </p>
+              <h4>Routing</h4>
+              <p>
+                The URL has always been one of the major strengths of the web,
+                and Ember apps respect that. Ember's built-in router is a
+                best-in-class solution that incorporates async data loading with
+                dynamic url segments and query parameters. The Ember router
+                seamlessly supports nested urls with incremental data fetching,
+                nested loading, and error substates.
+              </p>
+              <h4>Data layer</h4>
+              <p>
+                While you can use any data layer for your app, every new Ember
+                app includes a fully-featured data access library called Ember
+                Data. Ember Data allows you to access data across multiple
+                sources at once, setup asynchronous relationships, and keep
+                models up-to-date across your app.
+              </p>
+              <h4>Testing</h4>
+              <p>
+                Enjoy a fully-featured, modern test harness built into every
+                application by default. Every time an entity is generated in an
+                Ember app, tests are also generated for that same entity. Ember
+                apps support three levels of testing that are handy for testing
+                everything from individual components to acceptance tests that
+                can boot your whole app and interact with it to verify
+                everything is working as it should be. Tests are also run in the
+                browser, providing that extra peace of mind.
+              </p>
+              <h4>Performance</h4>
+              <p>
+                Ember is built on the Glimmer rendering engine, one of the
+                fastest rendering technologies on the market today, thanks to
+                the way it compiles templates down to a highly-performant
+                virtual machine. Due to our holistic performance approach,
+                performance upgrades are often free with version upgrades— no
+                extra work necessary!
+              </p>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/eQUvN9Ujs1s"
+                title="YouTube video player"
+                class="img-tutorial"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <h2>How to Start Learning Vue.js?</h2>
+              <p>
+                The Ember folk made a great
+                <a
+                  href="https://guides.emberjs.com/release/tutorial/part-1/"
+                  target="_blank"
+                  >tutorial</a
+                >
+                to help anyone who wants to, to learn how to use Ember with a
+                very hands-on approach.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+            >
+              <h3 id="g_t2_6"></h3>
+            </button>
+          </h2>
+          <div
+            id="collapseSix"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingSix"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <h6>
+                Just about everything in this section is straight from the
+                source,
+                <a href="https://docs.meteor.com/#/full/" target="_blank">
+                  Meteor's documentation</a
+                >.
+              </h6>
+              <h2>Why Use Meteor?</h2>
+              <p>
+                From the
+                <a href="https://www.meteor.com/" target="_blank">homepage</a>
+                of Meteor's site, they market their product as follows:
+              </p>
+              <h4>Build Full-Stack Javascript Apps with Meteor</h4>
+              <p>
+                Meteor is an open source framework for seamlessly building and
+                deploying Web, Mobile, and Desktop applications in Javascript.
+              </p>
+              <h4>Integrate technologies you already use</h4>
+              <p>
+                Use popular frameworks and tools right out-of-the-box. Focus on
+                building features instead of configuring disparate components
+                yourself.
+              </p>
+              <h4>Build apps for any device</h4>
+              <p>
+                Use the same code whether you’re developing for web, iOS,
+                Android, or desktop for a seamless update experience for your
+                users.
+              </p>
+
+              <h4>Trusted by over 500k developers</h4>
+              <p>
+                Developed for over a decade and trusted by industry giants.
+                Meteor is a mature open source framework that allows you to
+                build and scale efficiently so you can serve millions of users.
+              </p>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/eOi3F6Kbl7E"
+                title="YouTube video player"
+                class="img-tutorial"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <p>
+                The Meteor folk made a
+                <a href="https://www.meteor.com/" target="_blank">tutorial</a>
+                to help anyone who wants to, to learn how to use Meteor with a
+                very hands-on approach. You will need to create a free account
+                to get started.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeven">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven"
+              aria-expanded="false"
+              aria-controls="collapseSeven"
+            >
+              <h3 id="g_t2_7"></h3>
+            </button>
+          </h2>
+          <div
+            id="collapseSeven"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingSeven"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <h6>
+                Just about everything in this section is straight from the
+                source,
+                <a href="https://nodejs.org/en/docs/" target="_blank">
+                  Node's documentation</a
+                >.
+              </h6>
+              <h2>What is NodeJS</h2>
+              <p>
+                Node.js: Node.js is an open-source and cross-platform runtime
+                environment for executing JavaScript code outside a browser. You
+                need to remember that NodeJS is not a framework and it’s not a
+                programming language. Most people are confused and understand
+                it’s a framework or a programming language. We often use Node.js
+                for building back-end services like APIs like Web App or Mobile
+                App.
+              </p>
+
+              <p>
+                Features of Node.js: There are other programming languages also
+                which we can use to build back-end services so what makes
+                Node.js different I am going to explain.
+              </p>
+              <ul>
+                <li>
+                  <p>
+                    It’s easy to get started and can be used for prototyping and
+                    agile development
+                  </p>
+                </li>
+                <li><p>It provides fast and highly scalable services</p></li>
+                <li>
+                  <p>
+                    It uses JavaScript everywhere so it’s easy for a JavaScript
+                    programmer to build back-end services using Node.js
+                  </p>
+                </li>
+                <li><p>Source code cleaner and consistent.</p></li>
+                <li><p>Large ecosystem for open source library.</p></li>
+                <li><p>It has an Asynchronous or Non-blocking nature.</p></li>
+              </ul>
+              <h2>Why Use Node?</h2>
+              <p>
+                From the
+                <a href="https://nodejs.org/en/about/" target="_blank"
+                  >about page</a
+                >
+                of Node's site, they explain:
+              </p>
+              <p>
+                As an asynchronous event-driven JavaScript runtime, Node.js is
+                designed to build scalable network applications. In the
+                following "hello world" example, many connections can be handled
+                concurrently. Upon each connection, the callback is fired, but
+                if there is no work to be done, Node.js will sleep.
+              </p>
+              <pre><code class="js">
+  const http = require('http');
+
+  const hostname = '127.0.0.1';
+  const port = 3000;
+  
+  const server = http.createServer((req, res) => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('Hello World');
+  });
+  
+  server.listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${port}/`);
+  });
+              </code></pre>
+              <p>
+                This is in contrast to today's more common concurrency model, in
+                which OS threads are employed. Thread-based networking is
+                relatively inefficient and very difficult to use. Furthermore,
+                users of Node.js are free from worries of dead-locking the
+                process, since there are no locks. Almost no function in Node.js
+                directly performs I/O, so the process never blocks. Because
+                nothing blocks, scalable systems are very reasonable to develop
+                in Node.js.
+              </p>
+              <iframe
+                width="560"
+                height="315"
+                class="img-tutorial"
+                src="https://www.youtube.com/embed/uVwtVBpw7RQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <h2>How to Get Started with NodeJS</h2>
+              <p>
+                The following video will go through the installation of Node as
+                well as the development of a server-side program.
+              </p>
+              <iframe
+                width="560"
+                height="315"
+                class="img-tutorial"
+                src="https://www.youtube.com/embed/JH4qVqplC8E"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            TODO!!!!! Compare them, and teach why we are going to use React
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEight">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseEight"
+              aria-expanded="false"
+              aria-controls="collapseEight"
+            >
+              <h3 id="g_t2_8"></h3>
+            </button>
+          </h2>
+          <div
+            id="collapseEight"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingEight"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                When deciding which framework to use when developing an
+                application, there are several things to take into account. Some
+                of them are:
+              </p>
+              <ul>
+                <li><p>Availability of Learning Resources</p></li>
+                <li><p>Popularity</p></li>
+                <li><p>Core Features</p></li>
+                <li><p>Usability</p></li>
+                <li><p>Ease of Integration (with other libraries)</p></li>
+                <li><p>Startup Cost (Learning Curve)</p></li>
+                <li><p>Maintainability</p></li>
+              </ul>
+              <p>
+                Oftentimes, developers will want to learn something that will be
+                marketable, and they don't really have an application need when
+                they want to start. So they will see features offered by various
+                frameworks and have no basis of what matters most because they
+                don't have an application to apply it to. In these cases, there
+                are few things to take into consideration when finding the
+                framework(s) that will most likely yield the best benefit.
+              </p>
+              <ul>
+                <li><p id="googleSearch"></p></li>
+                <li>
+                  <p>
+                    Search Indeed.com for jobs for each framework. Notice the
+                    following three things: How many jobs there are, How much
+                    they pay, How much experience is required. The following
+                    stats were all gathered on the same day.
+                  </p>
+                  <ul>
+                    <li>
+                      <p>
+                        <a
+                          href="https://www.indeed.com/jobs?q=angular+developer&l=remote"
+                          target="_blank"
+                          >Angular - Remote</a
+                        >
+                        <i>3,384 jobs</i>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <a
+                          href="https://www.indeed.com/jobs?q=react+developer&l=remote"
+                          target="_blank"
+                          >React - Remote</a
+                        >
+                        <i>7,825 jobs</i>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <a
+                          href="https://www.indeed.com/jobs?q=vue+developer&l=remote"
+                          target="_blank"
+                          >Vue - Remote</a
+                        >
+                        <i>1,041 jobs</i>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <a
+                          href="https://www.indeed.com/jobs?q=ember+developer&l=remote"
+                          target="_blank"
+                          >Ember - Remote</a
+                        >
+                        <i>373 jobs</i>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <a
+                          href="https://www.indeed.com/jobs?q=meteor+developer&l=remote"
+                          target="_blank"
+                          >Meteor - Remote</a
+                        >
+                        <i>20 jobs</i>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <a
+                          href="https://www.indeed.com/jobs?q=nodejs+developer&l=remote"
+                          target="_blank"
+                          >NodeJS - Remote</a
+                        >
+                        <i>1,366 jobs </i>
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p>
+                From
+                <a
+                  href="https://medium.com/javascript-scene/top-javascript-frameworks-and-tech-trends-for-2021-d8cb0f7bda69"
+                  >medium.com</a
+                >
+                we can see the most popular of these frameworks being compared
+                in how much they are searched for on the web, and how many jobs
+                there are. You will see, this is very similar to the indeed.com
+                search results from a moment ago.
+              </p>
+              <img
+                src="https://miro.medium.com/max/600/1*xMWh_sQMH4ebPGHVyHVmzA.png"
+                alt="React 48%"
+                class="img-tutorial"
+                srcset=""
+              />
+              <p>
+                Along with this, it is often helpful to search Google for
+                JavaScript Framework Market Share to see current data of what is
+                being used.
+                <a
+                  href="https://medium.com/javascript-scene/top-javascript-frameworks-and-topics-to-learn-in-2020-and-the-new-decade-ced6e9d812f9"
+                  target="_blank"
+                  >This</a
+                >
+                is an article from 2020 that compares these frameworks and talks
+                about which ones are trending. One interesting comment from this
+                article was:
+              </p>
+              <p>
+                <code class="quote"
+                  >It may be cool to learn Svelte or Vue — but if your goal is
+                  to get a job, you’ll have better odds if you learn React
+                  first.</code
+                >
+              </p>
+              <p>
+                After looking at our search results from Indeed.com, this makes
+                sense completely.
+              </p>
+              <p>
+                However, this does not mean that React is the best. They all
+                serve a different purpose, but there is no denying that React is
+                being used more than any of the others. The topics mentioned
+                above are important when considering which to use for a specific
+                project. These frameworks can all pay very well, but as this
+                question has been asked time and time again:
+                <code>Which framework will be the best for my project?</code>,
+                React has ended up on top. For this purpose, we will spend the
+                remainder of this course learning JavaScript concepts in a React
+                environment, and learning React for application development.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingNine">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseNine"
+              aria-expanded="false"
+              aria-controls="collapseNine"
+            >
+              <h3 id="g_t2_9"></h3>
+            </button>
+          </h2>
+          <div
+            id="collapseNine"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingNine"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <a href="class1.html">
+                <div class="classActivity">
+                  <h5>Hands-on exercise 1 - Hello World!</h5>
+                </div>
+              </a>
+              <a href="class2.html">
+                <div class="classActivity">
+                  <h5>Hands-on exercise 2 - Hello World 2</h5>
+                </div>
+              </a>
+              <a href="class3.html">
+                <div class="classActivity">
+                  <h5>Hands-on exercise 3 - Hello World 3</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </body>
+</html>
