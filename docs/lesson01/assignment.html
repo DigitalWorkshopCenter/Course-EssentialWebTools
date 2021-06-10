@@ -25,92 +25,57 @@
     <article>
         <h1>Assignment #1</h1>
         <h2>Overview</h2>
-        <p>Today, you will complete your first assignment for this course. You will have an opportunity to demonstrate your understanding of the concepts taught in this module, and surely you will learn a lot as you develop a program of your own. These assignments are designed to be both fun and educational, as well as give you an opportunity to stretch yourself and develop your skills.</p>
+        <p>Today, you will complete your first assignment for this course. You will have an opportunity to demonstrate your understanding of the concepts taught in this module, and surely you will learn a lot as you work through this first assignment. These assignments are designed to be both fun and educational, as well as give you an opportunity to stretch yourself and develop your skills.</p>
         <p>Your tasks are as follows:</p>
-        <h3>Before beginning this Task:</h3>
-        <ul>
-            <li>
-                Download the following Zip file and extract it into a local folder of your choice:
-                <a href="assignmentStart.zip">assignmentStart.zip</a>
-            </li>
-            <li>
-                Open the folder created by unzipping week03.zip in VS Code
-            </li>
-        </ul>
-        <h3>Getting values in HTML form control elements from JavaScript</h3>
-        <p>
-            In last week's task, you accessed HTML elements and set their content and attributes using JavaScript.
-            In this task, you are to retrieve data entered by the user from the HTML form elements they used.
-        </p>
-        <p>
-            Use the same methods to access the HTML form elements that you used last week,
-        <pre><code class="lang-js">document.getElementById('formElementId')</code></pre>
-        <p>or</p>
-        <pre><code class="lang-js">document.querySelector('#formElementId'),</code></pre>
-        <p>to retrieve the value of a form control element, we use the <span class="file_name">value</span> property.</p>
-        <p>For example, to get a value from the following HTML form control with an ID of <em>city</em>:</p>
-        <p>
-            <pre><code class="lang-markup">&lt;input type="text" id="city" name="city"&gt;</code></pre>
-        </p>
-        <p>We would use the following syntax:</p>
-        <p>
-            <pre><code class="lang-js">let city = document.querySelector('#city').value</code></pre>
-        </p>
-        <h3>Functions</h3>
-        <h4>Complete the following steps</h4>
-        <p>In the <span class="file_name">task3.js</span> file:</p>
+        <h3>Familiarize Yourself with Someone Else's Project, and Fork it</h3>
         <ol>
-            <li>Using function declaration, define a function named <em>add</em> that takes two arguments, <em>number1</em> and <em>number2</em></li>
-            <li>In the function, return the sum of the parameters <em>number1</em> and <em>number2</em></li>
-            <li>Using function declaration, define another function named <em>addNumbers</em> that gets the values of two HTML form controls with IDs of <em>addend1</em> and <em>addend2</em>. Pass them to the <em>sum</em> function</li>
-            <li>Assign the return value to an HTML form element with an ID of <em>sum</em></li>
-            <li>Add a "click" event listener to the HTML button with an ID of <em>addNumbers</em> that calls the <em>addNumbers</em> function</li>
-            <li>Using function expressions, repeat Steps 1-5 with new functions named <em>subtract</em> and <em>subtractNumbers</em> and HTML form controls with IDs of <em>minuend</em>, <em>subtrahend</em>, <em>difference</em> and <em>subtractNumbers</em></li>
-            <li>Using arrow functions, repeat Steps 1-5 with new functions named <em>multiply</em> and <em>mulitplyNumbers</em> and HTML form controls with IDs of <em>factor1</em>, <em>factor2</em>, <em>product</em> and <em>multiplyNumbers</em></li>
-            <li>Using any of the three function declaration types, repeat Steps 1-5 with new functions named <em>divide</em> and <em>divideNumbers</em> and HTML form controls with IDs of <em>dividend</em>, <em>divisor</em>, <em>quotient</em> and <em>divideNumbers</em></li>
-            <li>Test all of the mathematical functionality of the <span class="file_name">task3.html</span> page.</li>
+            <li><p>Open the <a href="https://github.com/nathanbirch/html-template" target="_blank">nathanbirch/html-template</a> repository on github.</p></li>
+            <li><p>In the browser, navigate the files and commit history.</p></li>
+            <li><p>After learning about this repository, what could you share with someone else about it? What does it look like? What is the project supposed to do? Has a lot of effort gone in into it? How many people have collaborated on it? etc.</p></li>
+            <li><p>Now that you are comfortable with the structure of this project, click the <code>fork</code> button in the top right corner of the github page.
+            <br>
+            <img src="images/assignment1.png" class="img-tutorial" alt="">
+            <br>
+            When a project is forked, it basically copies the project and makes a new repository for you to use. If you go to your github portfolio page, or look at the list of your repositories, you should see this new html-template there as well.</p></li>
         </ol>
-        <h3>Built-In Methods</h3>
-        <h4>Complete the following steps</h4>
-        <p>In the <span class="file_name">task3.js</span> file:</p>
+        <h3>Clone the Repository on to Your Computer</h3>
         <ol>
-            <li>Declare and instantiate a variable of type Date to hold the current date</li>
-            <li>Declare a variable to hold the current year</li>
-            <li>Using the variable declared in Step 1, call the built-in <em>getFullYear()</em> method/function and assign it to the variable declared in Step 2</li>
-            <li>Assign the current year variable to an HTML form element with an ID of <em>year</em></li>
+            <li><p>Open a new VS Code window that does not have a project open. Click <code>Clone Git Repository...</code>
+            <br>
+            <img src="images/assignment2.png" class="img-tutorial" alt="">
+            </p></li>
+            <li><p>Paste the url of your newly forked github repository and click <code>Clone from URL</code>.
+            <br>
+            <img src="images/assignment3.png" class="img-tutorial" alt="">
+            </p></li>
+            <li><p>A File Explorer window will open, select where you want this code to be stored. Ensure that it is not inside of another git repository.</p></li>
+            <li><p>Finally, test your code. Open index.html with <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Live Server</a> and see if your new project works the way you want it to.</p></li>
         </ol>
-        <h3>Array Methods</h3>
-        <h4>Complete the following steps</h4>
-        <p>In the <span class="file_name">task3.js</span> file:</p>
+        <h3>Add an HTML page</h3>
+        <p>After investigating this code for a while, you can see that the links in the nav don't work, because there aren't any other html files for those links to take the user to. For this assignment, you will create an <code>about.html</code> page, and modify the link in <code>index.html</code> to navigate to that page.</p>
         <ol>
-            <li>Declare and instantiate an array variable to hold the numbers 1 through 25</li>
-            <li>Assign the value of the array variable to the HTML element with an ID of <em>array</em></li>
-            <li>Use the <em>filter()</em> array method to find all of the odd numbers of the array variable and assign the reult to the HTML element with an ID of <em>odds</em> ( hint: % (modulus operartor) )</li>
-            <li>Use the <em>filter()</em> array method to find all of the even numbers of the array variable and assign the result to the HTML element with an ID of <em>evens</em></li>
-            <li>Use the <em>reduce()</em> array method to sum the array variable elements and assign the result to the HTML element with an ID of <em>sumOfArray</em></li>
-            <li>Use the <em>map()</em> array method to multiple each element in the array variable by 2 and assign the result to the HTML element with an ID of <em>multiplied</em></li>
-            <li>Use the <em>map()</em> and <em>reduce()</em> array methods to sum the array elements after multiplying each element by two.  Assign the result to the HTML element with an ID of <em>sumOfMultiplied</em></li>
+            <li><p>Create a new file called <code>about.html</code>. This should be right next to index.html in the file explorer of VS Code.
+                <br>
+                <img src="images/assignment4.png" class="img-tutorial" alt="">
+            </p></li>
+            <li><p>Modify the <code>href</code> attribute of the a tag in the nav of index.html. When clicked, it should go to about.html instead of #.</p></li>
         </ol>
-        <!-- <ul>
-            <li><p>Write JavaScript code to perform mathematical operations on the sum of two numbers.</p></li>
-            <li><p>Create a function called <code>operationOnSum</code> that takes 3 arguments, first number, second number, and the operation that is to be performed on their sum (this will be the callback function) .</p></li>
-            <li><p>Create a function called <code> divideByHalf</code> and a function called <code> multiplyBy2</code> that are used as callback functions in the code above.</p></li>
-            <li><p>These callback functions will be executed only after the function operationOnSum is executed.</p></li>
-        </ul> -->
-        <h3>Save/push changes to Github</h3>
-        <p>Now that you have finished your program, it is time to save it in Github. We do this so that potential employers can see your work. It is good to be in the habit of saving your code in Github even in the very beginning. Anytime you write a program or work on a project, you will want to do what we are about to do now.</p>
-        <ul>
-            <li><p>Open the terminal in VS code by right clicking the <code>JavaScript2</code> folder and selecting "Open in Integrated Terminal".</p></li>
-            <li><p>execute the following commands:</p></li>
-            <li><p><code>git status</code> - This will show what changes have been made in your repository.</p></li>
-            <li><p><code>git add .</code> - This will prepare all of your changes for a commit (which will be saved in version control if you ever need to view or return to the state that your code is currently in).</p></li>
-            <li><p><code>git commit -m "Lesson 2 assignment"</code> - This will save the changes that you just added with the name that you put for the message, in this case: "Lesson 2 Assignment".</p></li>
-            <li><p><code>git push</code> - This will save your code in Github. Now you could go to the github.com website and view your code their as well along with your commit.</p></li>
-            <li><p>Navigate to <a href="github.com" target="_blank">github.com</a> and verify that your repository shows your latest code.</p></li>
-        </ul>
+        <h3>Commit Changes and Push to Github</h3>
+        <ol>    
+            <li><p>Click on the Source Control icon in VS Code:<br>
+            <img src="images/assignment5.png" class="img-tutorial" alt="">
+            </p></li>
+            <li><p>Enter a commit message and click the check:<br>
+            <img src="images/assignment6.png" class="img-tutorial" alt="">
+            </p></li>
+            <li><p>Click the three dots, then click push: <br>
+            <img src="images/assignment7.png" class="img-tutorial" alt="">
+            </p></li>
+            <li><p>Navigate to github.com and go to your repository. Check to ensure your new commit and update code is showing up there.</p></li>
+        </ol>
         <h3>Submit Assignment</h3>
         <ul>
-            <li><p>Fill out <a href="https://forms.gle/9u5h4kNVz81w8ChA8" target="_blank">This Form</a> to submit your assignment. You will need your github repository url (ie: https://github.com/yourUserName/JavaScript2) to complete this form.</p></li>
+            <li><p>Fill out <a href="https://forms.gle/4mKBpxZJayswEdrd9" target="_blank">This Form</a> to submit your assignment. You will need your github repository url (ie: https://github.com/yourUserName/html-template) to complete this form.</p></li>
         </ul>
     </article>
 </body>
