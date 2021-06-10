@@ -14,9 +14,9 @@ g.n04 = 'Lesson ' + '04';
 g.n05 = 'Lesson ' + '05';
 
 // module names
-g.u01 = g.n01 + ' - Diving Deeper Into JavaScript';
-g.u02 = g.n02 + ' - JavaScript Frameworks';
-g.u03 = g.n03 + ' - JavaScript Dependencies and Builds';
+g.u01 = g.n01 + ' - Web Tools and Text Editors';
+g.u02 = g.n02 + ' - Command Line';
+g.u03 = g.n03 + ' - Git';
 g.u04 = g.n04 + ' - Testing and Offline Storage';
 g.u05 = g.n05 + ' - Asynchronous JavaScript';
 
