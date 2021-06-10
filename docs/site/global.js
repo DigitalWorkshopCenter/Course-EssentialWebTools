@@ -11,14 +11,12 @@ g.n01 = 'Lesson ' + '01';
 g.n02 = 'Lesson ' + '02';
 g.n03 = 'Lesson ' + '03';
 g.n04 = 'Lesson ' + '04';
-g.n05 = 'Lesson ' + '05';
 
 // module names
 g.u01 = g.n01 + ' - Web Tools and Text Editors';
 g.u02 = g.n02 + ' - Command Line';
-g.u03 = g.n03 + ' - Git';
+g.u03 = g.n03 + ' - Git and Version Control';
 g.u04 = g.n04 + ' - Testing and Offline Storage';
-g.u05 = g.n05 + ' - Asynchronous JavaScript';
 
 // assignment information
 
@@ -27,34 +25,36 @@ g.classTime = 'In-class Materials';
 g.assignment = 'Programming Assignment';
 
 // course topics
-g.t1_0 = 'JavaScript Review';
-g.t1_1 = 'JavaScript Best Practices - Good Habits to get into';
-g.t1_2 = 'Helpful Programming Tips';
-g.t1_3 = 'JavaScript Modules';
-g.t1_4 = 'JavaScript Callbacks';
-g.t1_5 = 'Evolution of JavaScript';
+g.t1_1 = 'Course Overview';
+g.t1_2 = 'Introduction to Text Editors';
+g.t1_3 = 'Introduction to Git';
+g.t1_4 = 'Github';
+g.t1_5 = 'Create First Repository';
 
-g.t2_1 = 'JavaScript Frameworks';
-g.t2_2 = 'Angular';
-g.t2_3 = 'React';
-g.t2_4 = 'Vue';
-g.t2_5 = 'Ember';
-g.t2_6 = 'Meteor';
-g.t2_7 = 'Node';
-g.t2_8 = 'Comparing and Deciding';
-g.t2_9 = 'Getting Started with our Framework of Choice';
+g.t2_1 = 'Browser Developer Tools';
+g.t2_2 = 'Command Line & Terminal';
+g.t2_3 = 'SSH';
+g.t2_4 = 'Windows vs Mac vs Linux vs Chromebook';
+g.t2_5 = 'Being Awesome with Text Editors';
 
-g.t3_1 = 'Single Page Applications';
-g.t3_2 = 'Dependencies in JavaScript';
-g.t3_3 = 'npm and npx';
-g.t3_4 = 'Builds';
-g.t3_5 = 'Variable Types, Repetition, Functions';
-g.t3_6 = 'ES6 Concepts';
+g.t3_1 = 'Update Repositories';
+g.t3_2 = 'Working in a Team with Git';
+g.t3_3 = 'Create Branches';
+g.t3_4 = 'VS Code GUI';
 
-g.t4_1 = 'JavaScript Testing';
-g.t4_2 = 'Offline Storage';
+g.t4_1 = 'Package Managers';
+g.t4_2 = 'PHP: Composer';
+g.t4_3 = 'JavaScript: Node';
+g.t4_4 = 'Popular Packages';
 
-g.t5_1 = 'Asynchronous JavaScript';
-g.t5_2 = 'Recap on Starting a New Web App';
-g.t5_3 = 'Deploy App';
-g.t5_4 = 'Professional Portfolios';
+let courseTopics = [];
+for (t in g) {
+  if (t.charAt(0) === 't') {
+    let c2 = t.charAt(1);
+    let a = parseInt(c2) - 1;
+    if (!courseTopics[a]) {
+      courseTopics.push([]);
+    }
+    courseTopics[a].push(g[t]);
+  }
+}
