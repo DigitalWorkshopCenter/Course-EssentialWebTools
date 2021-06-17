@@ -22,7 +22,7 @@ g.u04 = g.n04 + ' - Testing and Offline Storage';
 
 g.reading = 'Reading Materials';
 g.classTime = 'In-class Materials';
-g.assignment = 'Programming Assignment';
+g.assignment = 'Assignment';
 
 // course topics
 g.t1_1 = 'Course Overview';
