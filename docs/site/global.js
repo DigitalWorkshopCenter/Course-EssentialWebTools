@@ -14,7 +14,7 @@ g.n04 = 'Lesson ' + '04';
 
 // module names
 g.u01 = g.n01 + ' - Web Tools and Text Editors';
-g.u02 = g.n02 + ' - Command Line';
+g.u02 = g.n02 + ' - Operating Systems and Command Lines';
 g.u03 = g.n03 + ' - Git and Version Control';
 g.u04 = g.n04 + ' - Testing and Offline Storage';
 
@@ -32,9 +32,9 @@ g.t1_4 = 'Github';
 g.t1_5 = 'Create First Repository';
 
 g.t2_1 = 'Browser Developer Tools';
-g.t2_2 = 'Command Line & Terminal';
-g.t2_3 = 'SSH';
-g.t2_4 = 'Windows vs Mac vs Linux vs Chromebook';
+g.t2_2 = 'Windows vs Mac vs Linux vs Chromebook';
+g.t2_3 = 'Command Line & Terminal';
+g.t2_4 = 'SSH';
 g.t2_5 = 'Being Awesome with Text Editors';
 
 g.t3_1 = 'Update Repositories';
