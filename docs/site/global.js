@@ -41,6 +41,7 @@ g.t3_1 = 'Update Repositories';
 g.t3_2 = 'Working in a Team with Git';
 g.t3_3 = 'Create Branches';
 g.t3_4 = 'VS Code GUI';
+g.t3_5 = 'Bootstrap';
 
 g.t4_1 = 'Package Managers';
 g.t4_2 = 'PHP: Composer';
