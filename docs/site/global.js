@@ -16,7 +16,7 @@ g.n04 = 'Lesson ' + '04';
 g.u01 = g.n01 + ' - Web Tools and Text Editors';
 g.u02 = g.n02 + ' - Operating Systems and Command Lines';
 g.u03 = g.n03 + ' - Git and Version Control';
-g.u04 = g.n04 + ' - Testing and Offline Storage';
+g.u04 = g.n04 + ' - Package Managers';
 
 // assignment information
 
@@ -47,6 +47,7 @@ g.t4_1 = 'Package Managers';
 g.t4_2 = 'PHP: Composer';
 g.t4_3 = 'JavaScript: Node';
 g.t4_4 = 'Popular Packages';
+g.t4_5 = 'Bootstrap in-depth';
 
 let courseTopics = [];
 for (t in g) {
