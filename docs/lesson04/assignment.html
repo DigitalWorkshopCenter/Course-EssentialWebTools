@@ -1,50 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../site/fav.png" />
-    <title>Lesson 4 Assignment</title>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="../site/style.css" />
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="../site/global.js"></script>
-    <link
-      rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/vs2015.min.css"
-    />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
-    <script>
-      hljs.highlightAll();
-      $(function () {
-        $('#includedHeader').load('../site/header.html');
-      });
-    </script>
-  </head>
 
-  <body>
-    <div id="includedHeader"></div>
-    <article>
-      <h1>Assignment #4</h1>
-      <h2>Overview</h2>
-      
-      <h3>Submit Assignment</h3>
-      <ul>
-        <li>
-          <p>
-            Fill out
-            <a href="https://forms.gle/FVnYvWznHREGDoi98" target="_blank"
-              >This Form</a
-            >
-            to submit your assignment. You will need your github repository url  to complete this
-            form.
-          </p>
-        </li>
-      </ul>
-    </article>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../site/fav.png" />
+  <title>Lesson 4 Assignment</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="../site/style.css" />
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="../site/global.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/vs2015.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+    $(function () {
+      $('#includedHeader').load('../site/header.html');
+    });
+  </script>
+</head>
+
+<body>
+  <div id="includedHeader"></div>
+  <article>
+    <h1>Assignment #4</h1>
+    <h2>Overview</h2>
+    <p>Your final assignment will cover all of the <code>Performance Based Objectives</code> of this course. You will build a web application that utilizes several npm packages. You will gain experience using your text editor and related plugins, using the terminal/command line in VS Code, working with git and uploading your code there (which also function as a backup), using package managers and 3rd party packages and using the developer tools throughout this process.</p>
+    <h2>Instructions</h2>
+    <h3>Create a New Repository</h3>
+    <ol>
+      <li>
+        <p>Go to github.com and create a new repository.</p>
+      </li>
+      <li>
+        <p>Create a new folder on your computer that is separate from all other git repositories on your machine.</p>
+      </li>
+      <li>
+        <p>Open VS Code and on the Welcome Page select <code>Clone Git Repository</code>. In the prompt provided, paste the url from the new git repository you made.</p>
+      </li>
+    </ol>
+    <h3>Create the Application</h3>
+    <ol>
+      <li>
+        <p>Create the following html files
+          <br>
+        <ul>
+          <li>
+            <p>index.html</p>
+          </li>
+          <li>
+            <p>account.html</p>
+          </li>
+          <li>
+            <p>about.html</p>
+          </li>
+          <li>
+            <p>contact.html</p>
+          </li>
+          <li>
+            <p>partial_nav.html</p>
+          </li>
+        </ul>
+        </p>
+      </li>
+      <li>
+        <p>Create a JavaScript file called script.js and a css file called style.css</p>
+      </li>
+      <!-- <li>
+        <p>Here is a video going through these first steps:</p>
+        <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/aa2GfTpAEZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </li>
+      <li>
+        <p>Your project structure should look like this:
+          <br>
+          <img src="./images/a4_1.png" class="img-tutorial" alt="">
+        </p>
+      </li> -->
+    </ol>
+    <h3>Add some npm packages to make this project awesome</h3>
+    <ol>
+      <li>
+        <p>Initiate npm to be able to use node packages: Open the terminal for this project and execute the command:
+        <pre><code>npm init</code></pre>
+        </p>
+      </li>
+      <li>
+        <p>You may install all of these packages separately, or you can do it all at once like this:
+          <br>
+        <pre><code>npm install --save browserify-css jquery bootstrap particlesjs</code></pre>
+        </p>
+      </li>
+      <li>
+        <p>Let's provide a place to require all of these packages up front for our website. Create a file called <code>script.js</code> right next to index.html outside of all other folders.
+        </p>
+      </li>
+      <li>
+        <p><a href="https://www.npmjs.com/package/jquery" target="_blank">jquery</a>
+          <br>
+        <ol>
+          <li>
+            <p>You are going to use jquery to put the navbar on each page. You will write the code for the navbar (or rather, use Bootstrap's navbar that you modify) in a single file called partial_nav.html. Then, you will use jquery in your script.js file to load it onto the active page.
+              <br>
+            <pre><code>var $ = require('jquery');
+$(document).ready(function () {
+    $('#navMenu').load('./partial_nav.html');
+});</code></pre>
+            </p>
+          </li>
+          <li>
+            <p>Include the following code in the body of each other html file where you want your navbar to appear:
+            <pre><code>&ltdiv id="navMenu"&gt&lt/div&gt</code></pre>
+            </p>
+          </li>
+        </ol>
+        </p>
+      </li>
+      <li>
+        <p><a href="https://www.npmjs.com/package/browserify-css" target="_blank">browserify-css</a>
+        <ol>
+          <li>
+            <p>Run the following command to package all js files into the browserify bundle:
+            <pre><code>browserify script.js -g browserify-css -o  bundle.js</code></pre>
+            </p>
+          </li>
+        </ol>
+        </p>
+      </li>
+      <li>
+        <p><a href="https://www.npmjs.com/package/bootstrap" target="_blank">bootstrap</a>
+          <br>
+        <ol>
+          <li>
+            <p>Add the following code to script.js:
+            <pre><code>require('bootstrap/dist/js/bootstrap');
+require('./node_modules/bootstrap/dist/css/bootstrap.css');</code></pre>
+            </p>
+          </li>
+          <li>
+            <p>With that there, you can now start adding bootstrap components to your application.</p>
+          </li>
+          <li>
+            <p>In <code>partial_nav.html</code> retrieve a bootstrap navbar that you like. Copy and paste it into your html file. Modify the links in the navbar to go to your about, account, contact and index pages.</p>
+          </li>
+          <li>
+            <p>In the home page, put a bootstrap carousel there with several images.</p>
+          </li>
+          <li>
+            <p>In the about page, use a bootstrap accordion with at least three sections.</p>
+          </li>
+          <li>
+            <p>In the contact page include a bootstrap form to let people contact you.</p>
+          </li>
+          <li>
+            <p>In the account page, include a bootstrap table with some information that you might see on a generic account page.</p>
+          </li>
+        </ol>
+        </p>
+      </li>
+      <li>
+        <p><a href="https://www.npmjs.com/package/particlesjs" target="_blank">particlesjs</a>
+          <br>
+        <ol>
+          <li>
+            <p>Put the following line of code into your <code>partial_nav.html</code> above the opening <code>nav</code> tag.
+            <pre><code>&ltcanvas class="background"&gt&lt/canvas&gt</code></pre>
+            </p>
+          </li>
+          <li>
+            <p>In <code>script.js</code> include the following at the top of the file:
+            <pre><code class="js">let Particles = require('particlesjs');</code></pre>
+            </p>
+          </li>
+          <li>
+            <p>Add the following code to your <code>style.css</code> file:
+            <pre><code class="css">html,
+body {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  background-color: black;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+            </code></pre>
+            </p>
+          </li>
+          <li>
+            <p>Add the following code to <code>script.js</code> to start the particles:
+            <pre><code class="js">let particleHome = {
+  selector: '.background',
+  connectParticles: true,
+  speed: 5,
+  color: ['#7FFF00', '#DC143C', '#1E90FF'],
+};
+Particles.init(particleHome);</code></pre>
+            </p>
+          </li>
+        </ol>
+        </p>
+      </li>
+      <li>
+        <p>The following video demonstrates all of the above steps:
+          <br>
+          <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/XLaWF_5FI40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+      </li>
+    </ol>
+    <h3>Stretch Challenges</h3>
+    <ol>
+      <li>
+        <p>Make the application look nice</p>
+      </li>
+      <li>
+        <p>Make it so the navbar shows the active link depending on which page you're on.</p>
+      </li>
+      <li>
+        <p>Make it so that each page has a unique particle background</p>
+      </li>
+      <li>
+        <p>Incorporate the <a href="https://www.npmjs.com/package/emailjs-com" target="_blank">emailjs-com</a> package so that someone could actually reach you via email with the form on the contact page.</p>
+      </li>
+      <li>
+        <p>The following video demonstrates the completion of each of these stretch challenges:
+          <br>
+          <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/vffRAOkd638" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+      </li>
+    </ol>
+    <h3>Conclusion</h3>
+    <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/Kn5GUCAca6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h3>Submit Assignment</h3>
+    <ul>
+      <li>
+        <p>
+          Fill out
+          <a href="https://forms.gle/FVnYvWznHREGDoi98" target="_blank">This Form</a>
+          to submit your assignment. You will need your github repository url to complete this
+          form.
+        </p>
+      </li>
+    </ul>
+  </article>
+</body>
+
 </html>
