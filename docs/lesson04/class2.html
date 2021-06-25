@@ -1,72 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../site/fav.png" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="../site/style.css" />
-    <link
-      rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/vs2015.min.css"
-    />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="../site/global.js"></script>
-    <script>
-      hljs.highlightAll();
-      $(function () {
-        $('#includedHeader').load('../site/header.html');
-      });
-      window.onload = function () {
-        // load global variables
-        document.title = g.n04 + ' - Hands-on 2';
-      };
-    </script>
-  </head>
 
-  <body>
-    <div id="includedHeader"></div>
-    <article>
-      <h1>Hands-on Exercise 2<br />More Tests</h1>
-      <h2>Overview</h2>
-      <p>Now that you have written some tests, we are going to get more experience working with tests, async, props, mock data, and more.</p>
-      <h2>Instructions</h2>
-      <ul>
-        <li><p>Download <a href="class2.zip">This code</a></p></li>
-        <li><p>Run the following commands:<br>
-          <ul>
-            <li><p>npm install</p></li>
-            <li><p>npm install</p></li>
-            <li><p>npm test</p></li>
-          </ul>
-        </p></li>
-      </ul>
-      <p>Look through this project and investigate the code. Do your best to answer the following questions:</p>
-      <ul>
-        <li><p>What do you notice about the tests that are being run?</p></li>
-        <li><p>How is the data getting into the tests?</p></li>
-        <li><p>How is mock data being utilized?</p></li>
-        <li><p>What is the purpose of mock data?</p></li>
-        <li><p>Where can you find the official documentation for Jest?</p></li>
-        <li><p>How does create-react-app help us get started with testing?</p></li>
-        <li><p>Where can I find the documentation on the React-Testing-Library?</p></li>
-      </ul>
-    </article>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../site/fav.png" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="../site/style.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/vs2015.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="../site/global.js"></script>
+  <script>
+    hljs.highlightAll();
+    $(function () {
+      $('#includedHeader').load('../site/header.html');
+    });
+    window.onload = function () {
+      // load global variables
+      document.title = g.n04 + ' - Hands-on 2';
+    };
+  </script>
+</head>
+
+<body>
+  <div id="includedHeader"></div>
+  <article>
+    <h1>Hands-on Exercise 2<br />Our first app with Browserify</h1>
+    <h2>Overview</h2>
+    <p>For this exercise, we are going to create a frontend (HTML, CSS, & JavaScript) web application that also uses npm for package management. To do this, we will use an npm package called <a href="https://browserify.org/" target="_blank">Browserify</a> .</p>
+    <h2>Instructions</h2>
+    <ol>
+      <li>
+        <p>Install browserify on your computer by running the following npm command in the terminal:
+        <pre><code>npm install --global browserify</code></pre>
+        </p>
+      </li>
+      <li>
+        <p>Create a folder on your computer for our new project, for example:
+          <br>
+          <img src="./images/folder.png" class="img-tutorial" alt="">
+        </p>
+      </li>
+      <li>
+        <p>Open this folder in your terminal and initiate an npm project by executing the following command:
+        <pre><code>npm init</code></pre><br>Go through all of the default options. You should see that this command created a <code>package.json</code> file for all of your dependencies that will be a part of this project.
+        <br>
+        <img src="./images/npmInit.png" class="img-tutorial" alt="">
+        </p>
+      </li>
+      <li>
+        <p>Create the <code>index.html</code> file with the following content in it:
+          <br>
+
+        <pre><code>&lt;!-- index.html --&gt;
+&lt;!doctype html&lt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Getting Cozy with Browserify&lt;/title&gt;
+    &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"&gt;
+    &lt;style&gt;
+      h1, p, div { text-align: center; }
+      html       { background: #fffffe; }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="container"&gt;
+      &lt;h2&gt;Welcome to the Client Side.&lt;/h2&gt;
+
+      &lt;div class="well"&gt;
+        &lt;p&gt;I see you've got some numbers. Why not let me see them?&lt;/p&gt;
+
+        &lt;div id="response"&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script src="main.js"&gt;&lt;/script&gt;
+    &lt;script src="bundle.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+        </p>
+      </li>
+      <li>
+        <p>In the terminal of your project, execute the following command:
+        <pre><code>npm install --save browserify</code></pre><br>This will add browserify to your package.json file.</p>
+      </li>
+      <li>
+        <p>If you open this with live server and look at the console, you'll see several errors:
+          <br>
+          <img src="./images/bundleError1.png" class="img-tutorial" alt="">
+        </p>
+      </li>
+      <li>
+        <p>Let's start fixing these by creating <code>main.js</code> with the following code in it
+        <pre><code class="js">"use strict";
+
+        var R = require('ramda');
+        
+        var square = function square (x) { return x * x; }  
+        var squares = R.chain(square, [1, 2, 3, 4, 5]); 
+        
+        document.getElementById('response').innerHTML = squares;</code></pre>
+        </p>
+      </li>
+      <li>
+        <p>Notice our <code>require</code> statement. We need to install the <code>ramda</code> package and ensure that it is referenced in our package.json file. To do this, execute this command:
+        <pre><code>npm install ramda --save</code></pre>
+        </p>
+      </li>
+      <li>
+        <p>Notice how our errors changed:
+          <br>
+          <img src="./images/bundleError2.png" class="img-tutorial" alt="">
+        </p>
+      </li>
+      <li>
+        <p>Let's fix our next one: <code>require is not defined</code>. Run the command:
+        <pre><code>browserify main.js -o bundle.js</code></pre> in the terminal where all of these files are.</p>
+      </li>
+      <li>
+        <p>You'll notice that it created bundle.js for you, and bundle.js has about 15,000 lines of code. 😲</p>
+      </li>
+      <li>
+        <p>Open index.html in the browser and view the console. We are down to one error:
+          <br>
+          <img src="./images/bundleError3.png" class="img-tutorial" alt="">
+        </p>
+      </li>
+      <li>
+        <p>To fix this one, it's important to understand what bundle.js does. If you look in the code of bundle.js, you'll see some of what looks like your code from main.js, and all of the code from the require statement. npm install (somePackage) will download it into the node_modules folder. Browserify will retrieve it, and put it into bundle.js. So, let's fix our error by deleting the following line of code from our html:
+          <br>
+          <img src="./images/bundleError4.png" class="img-tutorial" alt="">
+        <p>This should be the only script tag in index.html now:</p>
+        <img src="./images/bundleError5.png" class="img-tutorial" alt="">
+        </p>
+      </li>
+      <li>After doing this, you should notice two things.
+        <ol>
+          <li>
+            <p>Our code works. It shows the squared values (that were created using our ramda package) in the html. So we know that both our js code as well as the packages in node_modules are working beautifully.
+              <br>
+              <img src="./images/bundleAwesomeness1.png" class="img-tutorial" alt="">
+            </p>
+          </li>
+          <li>
+            <p>There are no more errors in the console. 😁</p>
+          </li>
+        </ol>
+      </li>
+    </ol>
+    <h2>Conclusion</h2>
+    <h4>Let's review what we just did:</h4>
+    <ul>
+      <li>
+        <p>We created an html file that referenced a js file called bundle.js. We had our own main.js file that had a <code>require</code> statement that was going to use an npm package.</p>
+      </li>
+      <li>
+        <p>We ran <code>npm install</code> commands for the required package (in the js file) and for <code>Browserify</code> that allowed us to use any packages referenced. These also created the <code>package.json</code> file(s) that our app would use to manage the dependencies downloaded into the node_modules folder.</p>
+      </li>
+      <li>
+        <p>We ran <code>browserify main.js -o bundle.js</code> to tell Browserify to create bundle.js (bundle had all of our js file code, as well as all dependencies from node_modules referenced in our js file with the <code>require</code> statement.</p>
+      </li>
+    </ul>
+    <p><a href="./browserifyApp1.zip">Here</a> is the completed code in a zip file. When you download it, you'll need to run <code>npm install</code> in the terminal of the folder to install all of the dependencies listed in the <code>package.json</code>. In short, this will create the <code>node_modules</code> folder. </p>
+  </article>
+</body>
+
 </html>

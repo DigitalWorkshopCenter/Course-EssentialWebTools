@@ -1,0 +1,21 @@
+{
+  "name": "browserifyapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "browserify-css": "^0.15.0",
+    "ramda": "^0.27.1"
+  },
+  "browserify": {
+    "transform": [
+      "cssify"
+    ]
+  }
+}
