@@ -1,254 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../site/fav.png" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="../site/style.css" />
-    <link
-      rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/vs2015.min.css"
-    />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="../site/global.js"></script>
-    <script>
-      hljs.highlightAll();
-      $(function () {
-        $('#includedHeader').load('../site/header.html');
-      });
-      window.onload = function () {
-        // load global variables
-        document.title = g.u02;
-        document.getElementById('g_u02').innerHTML = g.u02;
-        document.getElementById('g_t2_1').innerHTML = g.t2_1;
-        document.getElementById('g_t2_2').innerHTML = g.t2_2;
-        document.getElementById('g_t2_3').innerHTML = g.t2_3;
-        document.getElementById('g_t2_4').innerHTML = g.t2_4;
-        document.getElementById('g_t2_5').innerHTML = g.t2_5;
 
-      };
-    </script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../site/fav.png" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="../site/style.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/vs2015.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="../site/global.js"></script>
+  <script>
+    hljs.highlightAll();
+    $(function () {
+      $('#includedHeader').load('../site/header.html');
+    });
+    window.onload = function () {
+      // load global variables
+      document.title = g.u02;
+      document.getElementById('g_u02').innerHTML = g.u02;
+      document.getElementById('g_t2_1').innerHTML = g.t2_1;
+      document.getElementById('g_t2_2').innerHTML = g.t2_2;
+      document.getElementById('g_t2_3').innerHTML = g.t2_3;
+      document.getElementById('g_t2_4').innerHTML = g.t2_4;
+      document.getElementById('g_t2_5').innerHTML = g.t2_5;
 
-  <body>
-    <div id="includedHeader"></div>
-    <article>
-      <h1 id="g_u02"></h1>
-      <h2 id="g_reading"></h2>
-      <p>
-        This lesson will introduce a lot of new content. The goal is to
-        introduce you to these frameworks so that you know of their existence
-        and a bit of what they can do. While links are included below to start
-        learning each of the frameworks, we will only focus on one of them for
-        our assignments and activities for the remainder of this course.
-      </p>
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
-              aria-expanded="false"
-              aria-controls="collapseOne"
-            >
-              <h3 id="g_t2_1"></h3>
-            </button>
-          </h2>
-          <div
-            id="collapseOne"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <h3>Chrome Developer Tools</h3>
-              <p>As web developers, it is important that we understand how to use the developer tools in Google Chrome. Please watch the following videos. Some of the things that you see me do in them will look familiar to you, and other things will be very new. Understanding how these tools work will benefit you greatly as we start working more with webpages. </p>
-              <h4>Chrome Developer Tools: Elements</h4>
-              <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/C6Nj2tadanY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <h4>Chrome Developer Tools: Console</h4>
-              <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/3iegyK7obqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <h4>Chrome Developer Tools: Sources</h4>
-              <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/RG1XUbb6f8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <a href="class3.html">
-                <div class="classActivity">
-                    <h5>Hands-on exercise - Chrome Developer Tools Practice</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
-              <h3 id="g_t2_2"></h3>
-            </button>
-          </h2>
-          <div
-            id="collapseTwo"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingTwo"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <h4>Windows</h4>
-              <p>Windows is an operating system designed by Microsoft. The operating system is what allows you to use a computer. Windows comes preloaded on most new personal computers (PCs), which helps to make it the most popular operating system in the world.</p>
-              <p>Windows makes it possible to complete all types of everyday tasks on your computer. For example, you can use Windows to browse the Internet, check your email, edit digital photos, listen to music, play games, and do much more.</p>
-              <p>Windows is also used in many offices because it gives you access to productivity tools such as calendars, word processors, and spreadsheets.</p>
-              <p>Microsoft released the first version of Windows in the mid-1980s. There have been many versions of Windows since then, but the most recent ones include Windows 10 (released in 2015), Windows 8 (2012), Windows 7 (2009), Windows Vista (2007), and Windows XP (2001).</p>
-              <h4>MacOS</h4>
-              <p>macOS is a proprietary graphical operating system developed and marketed by Apple Inc. since 2001. It is the primary operating system for Apple's Mac computers. Within the market of desktop, laptop and home computers, and by web usage, it is the second most widely used desktop OS, after Windows NT.</p>
-              <p>macOS succeeded the classic Mac OS, a Macintosh operating system with nine releases from 1984 to 1999. During this time, Apple cofounder Steve Jobs had left Apple and started another company, NeXT, developing the NeXTSTEP platform that would later be acquired by Apple to form the basis of macOS.</p>
-              <p>The first desktop version, Mac OS X 10.0, was released in March 2001, with its first update, 10.1, arriving later that year. Releases from Mac OS X 10.5 Leopard thereafter are UNIX 03 certified. Apple's mobile operating system, iOS, has been considered a variant of macOS.</p>
-              <p>A prominent part of macOS's original brand identity was the use of Roman numeral X, pronounced "ten" as in Mac OS X and also the iPhone X, as well as code naming each release after species of big cats, or places within California. Apple shortened the name to "OS X" in 2012 and then changed it to "macOS" in 2016 to align with the branding of Apple's other operating systems, iOS, watchOS, and tvOS. After sixteen distinct versions of macOS 10, macOS Big Sur was presented as version 11 in 2020, and macOS Monterey was presented as version 12 in 2021.</p>
-              <p>macOS has supported three major processor architectures, beginning with PowerPC-based Macs in 1999. In 2006, Apple transitioned to the Intel architecture with a line of Macs using Intel Core processors. In 2020, Apple began the Apple silicon transition, using self-designed, 64-bit ARM-based Apple M1 processors on new Mac computers.</p>
-              <h4>ChromeOS</h4>
-              <p>Chrome OS (sometimes styled as chromeOS) is a Gentoo Linux-based operating system designed by Google. It is derived from the free software Chromium OS and uses the Google Chrome web browser as its principal user interface. Unlike Chromium OS, Chrome OS is proprietary software.</p>
-              <p>Google announced the project, based on Ubuntu, in July 2009, conceiving it as an operating system in which both applications and user data reside in the cloud: hence Chrome OS primarily runs web applications. Source code and a public demo came that November. The first Chrome OS laptop, known as a Chromebook, arrived in May 2011. Initial Chromebook shipments from Samsung and Acer occurred in July 2011.</p>
-              <p>Chrome OS has an integrated media player and file manager. It supports Chrome Apps, which resemble native applications, as well as remote access to the desktop. As more Chrome OS machines have entered the market, the operating system is now seldom evaluated apart from the hardware that runs it.</p>
-              <p>Android applications started to become available for the operating system in 2014, and in 2016, access to Android apps in Google Play's entirety was introduced on supported Chrome OS devices. Support for a Linux terminal and applications, known as Project Crostini, was released to the stable channel in Chrome OS 69. This was made possible via a lightweight Linux kernel that runs containers inside a virtual machine.</p>
-              <p>Chrome OS is only available pre-installed on hardware from Google manufacturing partners, but there are unofficial methods that allow it to be installed in other equipment. Its open-source upstream, Chromium OS, can be compiled from downloaded source code. Early on, Google provided design goals for Chrome OS, but has not otherwise released a technical description.</p>
-              <h4>Applications vs Operating Systems</h4>
-              <p>Above, you learned how to use the Google Chrome developer tools. Regardless of what operating system you're using, the way those tools function, and the way Google Chrome functions, is identical. Similarly, when I open up VS Code, or Microsoft Word, or Zoom...they all have similar if not identical functionalities across the board, regardless of which operating system is being used. This is because these are all examples of applications that are installed on a computer that can be accessed from within an operating system. </p>
-              <p>Outside of these applications, there are obviously many differences between these operating systems. For example, today we'll be learning about how to manage a computer without your mouse, and without a Graphical User Interface, or GUI. We will be learning how to use a command line, also known as a terminal.</p>
-              <img src="https://lh3.googleusercontent.com/proxy/5fsAvYnTiJeCSIarI4a4aDSbHl0ogVFvDbhJLh2wW_8dcxkcxSfUFav7uemo3kGfE8GrrbGRKoITf3U3BQ_JpEWNlcOhyoQ" class="img-tutorial" alt="">
-              <p>We can control our computers with this command interface by typing words that form commands and then pressing enter to execute them. Different operating systems (like Windows, MacOS, ChromeOS, Linux) have different commands that are used. We will cover the basics of each operating system today.</p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
-              aria-expanded="false"
-              aria-controls="collapseThree"
-            >
-              <h3 id="g_t2_3"></h3>
-            </button>
-          </h2>
-          <div
-            id="collapseThree"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingThree"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <h4>Windows Command Line</h4>
-              <a href="https://helpdeskgeek.com/help-desk/21-cmd-commands-all-windows-users-should-know/" target="_blank">21 CMD Commands All Windows Users Should Know</a>
-              <h4>MacOS Terminal</h4>
-              <a href="https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/" target="_blank">17 Terminal Commands Every User Should Know</a>
-              <h4>ChromeOS Crosh</h4>
-              <a href="https://www.makeuseof.com/tag/terminal-commands-chromebook/" target="_blank">18 Crosh Terminal Commands All Chromebook Users Should Know</a>
-              <a href="class1.html">
-                <div class="classActivity">
-                    <h5>Hands-on exercise - Basic Linux Commands</h5>
-                </div>
-              </a>
-              <a href="class2.html">
-                <div class="classActivity">
-                    <h5>Hands-on exercise - Git Commands</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingFour">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseFour"
-              aria-expanded="false"
-              aria-controls="collapseFour"
-            >
-              <h3 id="g_t2_4"></h3>
-            </button>
-          </h2>
-          <div
-            id="collapseFour"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingFour"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <h4>What is SSH?</h4>
-              <a href="https://searchsecurity.techtarget.com/definition/Secure-Shell" target="_blank">Secure Shell (SSH)</a>
-              <h4>What does SSH have to do with Web Development?</h4>
-              <a href="https://www.sitepoint.com/community/t/when-would-you-use-terminal-ssh-for-web-development/45975/2" target="_blank">When would you use Terminal / SSH for web development?</a>
-              <h4>Windows SSH</h4>
-              <a href="https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/" target="_blank">How to Enable and Use Windows 10’s New Built-in SSH Commands</a>
-              <h4>MacOS SSH</h4>
-              <a href="https://www.servermania.com/kb/articles/ssh-mac/" target="_blank">How to SSH on Mac</a>
-              <h4>ChromeOS SSH</h4>
-              <a href="https://www.lifewire.com/how-to-use-chromebook-ssh-client-4690108" target="_blank">How to Use the Chromebook SSH Client</a>
-              
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingFive">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseFive"
-              aria-expanded="false"
-              aria-controls="collapseFive"
-            >
-              <h3 id="g_t2_5"></h3>
-            </button>
-          </h2>
-          <div
-            id="collapseFive"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingFive"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <h4>Getting Comfortable with Visual Studio Code</h4>
-              <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/sRbR-CuOrpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/5FE7L8syBm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <h4>How to connect VS Code to server with SSH</h4>
-              <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/y9iM0lYAQD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <a href="class4.html">
-                <div class="classActivity">
-                    <h5>Hands-on exercise - VS Code Hotkey Awesomeness</h5>
-                </div>
-              </a>
-            </div>
+    };
+  </script>
+</head>
+
+<body>
+  <div id="includedHeader"></div>
+  <article>
+    <h1 id="g_u02"></h1>
+    <h2 id="g_reading"></h2>
+    <p>
+      This lesson will introduce a lot of new content. The goal is to
+      introduce you to these frameworks so that you know of their existence
+      and a bit of what they can do. While links are included below to start
+      learning each of the frameworks, we will only focus on one of them for
+      our assignments and activities for the remainder of this course.
+    </p>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <h3 id="g_t2_1"></h3>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <h3>Chrome Developer Tools</h3>
+            <p>As web developers, it is important that we understand how to use the developer tools in Google Chrome. Please watch the following videos. Some of the things that you see me do in them will look familiar to you, and other things will be very new. Understanding how these tools work will benefit you greatly as we start working more with webpages. </p>
+            <h4>Chrome Developer Tools: Elements</h4>
+            <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/C6Nj2tadanY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h4>Chrome Developer Tools: Console</h4>
+            <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/3iegyK7obqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h4>Chrome Developer Tools: Sources</h4>
+            <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/RG1XUbb6f8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <a href="class1.html">
+              <div class="classActivity">
+                <h5>Hands-on exercise - Chrome Developer Tools Practice</h5>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-        <h2><a href="assignment.html" target="_blank">Continue to Assignment</a></h2>
-      </article>
-  </body>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <h3 id="g_t2_2"></h3>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <h4>Windows</h4>
+            <p>Windows is an operating system designed by Microsoft. The operating system is what allows you to use a computer. Windows comes preloaded on most new personal computers (PCs), which helps to make it the most popular operating system in the world.</p>
+            <p>Windows makes it possible to complete all types of everyday tasks on your computer. For example, you can use Windows to browse the Internet, check your email, edit digital photos, listen to music, play games, and do much more.</p>
+            <p>Windows is also used in many offices because it gives you access to productivity tools such as calendars, word processors, and spreadsheets.</p>
+            <p>Microsoft released the first version of Windows in the mid-1980s. There have been many versions of Windows since then, but the most recent ones include Windows 10 (released in 2015), Windows 8 (2012), Windows 7 (2009), Windows Vista (2007), and Windows XP (2001).</p>
+            <h4>MacOS</h4>
+            <p>macOS is a proprietary graphical operating system developed and marketed by Apple Inc. since 2001. It is the primary operating system for Apple's Mac computers. Within the market of desktop, laptop and home computers, and by web usage, it is the second most widely used desktop OS, after Windows NT.</p>
+            <p>macOS succeeded the classic Mac OS, a Macintosh operating system with nine releases from 1984 to 1999. During this time, Apple cofounder Steve Jobs had left Apple and started another company, NeXT, developing the NeXTSTEP platform that would later be acquired by Apple to form the basis of macOS.</p>
+            <p>The first desktop version, Mac OS X 10.0, was released in March 2001, with its first update, 10.1, arriving later that year. Releases from Mac OS X 10.5 Leopard thereafter are UNIX 03 certified. Apple's mobile operating system, iOS, has been considered a variant of macOS.</p>
+            <p>A prominent part of macOS's original brand identity was the use of Roman numeral X, pronounced "ten" as in Mac OS X and also the iPhone X, as well as code naming each release after species of big cats, or places within California. Apple shortened the name to "OS X" in 2012 and then changed it to "macOS" in 2016 to align with the branding of Apple's other operating systems, iOS, watchOS, and tvOS. After sixteen distinct versions of macOS 10, macOS Big Sur was presented as version 11 in 2020, and macOS Monterey was presented as version 12 in 2021.</p>
+            <p>macOS has supported three major processor architectures, beginning with PowerPC-based Macs in 1999. In 2006, Apple transitioned to the Intel architecture with a line of Macs using Intel Core processors. In 2020, Apple began the Apple silicon transition, using self-designed, 64-bit ARM-based Apple M1 processors on new Mac computers.</p>
+            <h4>ChromeOS</h4>
+            <p>Chrome OS (sometimes styled as chromeOS) is a Gentoo Linux-based operating system designed by Google. It is derived from the free software Chromium OS and uses the Google Chrome web browser as its principal user interface. Unlike Chromium OS, Chrome OS is proprietary software.</p>
+            <p>Google announced the project, based on Ubuntu, in July 2009, conceiving it as an operating system in which both applications and user data reside in the cloud: hence Chrome OS primarily runs web applications. Source code and a public demo came that November. The first Chrome OS laptop, known as a Chromebook, arrived in May 2011. Initial Chromebook shipments from Samsung and Acer occurred in July 2011.</p>
+            <p>Chrome OS has an integrated media player and file manager. It supports Chrome Apps, which resemble native applications, as well as remote access to the desktop. As more Chrome OS machines have entered the market, the operating system is now seldom evaluated apart from the hardware that runs it.</p>
+            <p>Android applications started to become available for the operating system in 2014, and in 2016, access to Android apps in Google Play's entirety was introduced on supported Chrome OS devices. Support for a Linux terminal and applications, known as Project Crostini, was released to the stable channel in Chrome OS 69. This was made possible via a lightweight Linux kernel that runs containers inside a virtual machine.</p>
+            <p>Chrome OS is only available pre-installed on hardware from Google manufacturing partners, but there are unofficial methods that allow it to be installed in other equipment. Its open-source upstream, Chromium OS, can be compiled from downloaded source code. Early on, Google provided design goals for Chrome OS, but has not otherwise released a technical description.</p>
+            <h4>Applications vs Operating Systems</h4>
+            <p>Above, you learned how to use the Google Chrome developer tools. Regardless of what operating system you're using, the way those tools function, and the way Google Chrome functions, is identical. Similarly, when I open up VS Code, or Microsoft Word, or Zoom...they all have similar if not identical functionalities across the board, regardless of which operating system is being used. This is because these are all examples of applications that are installed on a computer that can be accessed from within an operating system. </p>
+            <p>Outside of these applications, there are obviously many differences between these operating systems. For example, today we'll be learning about how to manage a computer without your mouse, and without a Graphical User Interface, or GUI. We will be learning how to use a command line, also known as a terminal.</p>
+            <img src="https://lh3.googleusercontent.com/proxy/5fsAvYnTiJeCSIarI4a4aDSbHl0ogVFvDbhJLh2wW_8dcxkcxSfUFav7uemo3kGfE8GrrbGRKoITf3U3BQ_JpEWNlcOhyoQ" class="img-tutorial" alt="">
+            <p>We can control our computers with this command interface by typing words that form commands and then pressing enter to execute them. Different operating systems (like Windows, MacOS, ChromeOS, Linux) have different commands that are used. We will cover the basics of each operating system today.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <h3 id="g_t2_3"></h3>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <h4>Windows Command Line</h4>
+            <a href="https://helpdeskgeek.com/help-desk/21-cmd-commands-all-windows-users-should-know/" target="_blank">21 CMD Commands All Windows Users Should Know</a>
+            <h4>MacOS Terminal</h4>
+            <a href="https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/" target="_blank">17 Terminal Commands Every User Should Know</a>
+            <h4>ChromeOS Crosh</h4>
+            <a href="https://www.makeuseof.com/tag/terminal-commands-chromebook/" target="_blank">18 Crosh Terminal Commands All Chromebook Users Should Know</a>
+            <a href="class2.html">
+              <div class="classActivity">
+                <h5>Hands-on exercise - Basic Linux Commands</h5>
+              </div>
+            </a>
+            <a href="class3.html">
+              <div class="classActivity">
+                <h5>Hands-on exercise - Git Commands</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <h3 id="g_t2_4"></h3>
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <h4>What is SSH?</h4>
+            <a href="https://searchsecurity.techtarget.com/definition/Secure-Shell" target="_blank">Secure Shell (SSH)</a>
+            <h4>What does SSH have to do with Web Development?</h4>
+            <a href="https://www.sitepoint.com/community/t/when-would-you-use-terminal-ssh-for-web-development/45975/2" target="_blank">When would you use Terminal / SSH for web development?</a>
+            <h4>Windows SSH</h4>
+            <a href="https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/" target="_blank">How to Enable and Use Windows 10’s New Built-in SSH Commands</a>
+            <h4>MacOS SSH</h4>
+            <a href="https://www.servermania.com/kb/articles/ssh-mac/" target="_blank">How to SSH on Mac</a>
+            <h4>ChromeOS SSH</h4>
+            <a href="https://www.lifewire.com/how-to-use-chromebook-ssh-client-4690108" target="_blank">How to Use the Chromebook SSH Client</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            <h3 id="g_t2_5"></h3>
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <h4>Getting Comfortable with Visual Studio Code</h4>
+            <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/sRbR-CuOrpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/5FE7L8syBm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h4>How to connect VS Code to server with SSH</h4>
+            <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/y9iM0lYAQD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <a href="class4.html">
+              <div class="classActivity">
+                <h5>Hands-on exercise - VS Code Hotkey Awesomeness</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2><a href="assignment.html" target="_blank">Continue to Assignment</a></h2>
+  </article>
+</body>
+
 </html>
