@@ -1,110 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../site/fav.png" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="../site/style.css" />
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="../site/global.js"></script>
-    <link
-      rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/vs2015.min.css"
-    />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
-    <script>
-      hljs.highlightAll();
-      $(function () {
-        $('#includedHeader').load('../site/header.html');
-      });
-    </script>
-  </head>
 
-  <body>
-    <div id="includedHeader"></div>
-    <article>
-      <h1>Assignment #3</h1>
-      <h2>Overview</h2>
-      <p>This assignment will be unique, because in order to complete it, you will have to work with your peers in this class. :) In short, you will: </p> 
-      <ul>
-        <li><p>clone a Github repository</p></li>
-        <li><p>create a branch</p></li>
-        <li><p>add your code</p></li>
-        <li><p>retrieve/pull the code from the branches of your peers</p></li>
-        <li><p>resolve merge conflicts</p></li>
-        <li><p>create a pull request to merge the team's code with the master branch</p></li>
-      </ul>
-      <p>The merge process is generally handled at an administrator level. In this case, only the owner of the repository will be able to allow changes to the master branch. But you will be able to clone the project, make a branch, then submit a pull request. When a pull request is submitted, the administrator of a repository will be able to view it, view your comments, your commits, and all code that was changed to decide whether they will merge the request and close it, and reject the merge and provide feedback as to why it was rejected.</p>
-      <p>The tricky part of this task will be to merge your code with the code of your peers. You will likely have to deal with merge conflicts and this will help you a lot with these essential skills.</p>
-      <h3>Your tasks are as follows:</h3>
-        <h4>Get familiar with the code</h4>
-         <ol>
-           <li><p>Clone this repository: <a href="https://github.com/nathanbirch/html-template2" target="be">https://github.com/nathanbirch/html-template2</a></p></li>
-           <li><p>Open the <code>index.html</code> file with live server and investigate the project.</p></li>
-           <li><p>You can also see what the production version of this code looks like <a href="https://nathanbirch.github.io/html-template2/" target="blank">here</a>.</p></li>
-         </ol>
-        <h4>Modify the code</h4>
-        <p>Your team (all the classmates in this course) will be working on this same repository and even the same <code>index.html</code> page. Because of this, make an effort to only modify those bits of code that you need to in order to complete your tasks.</p>
-         <ol>
-           <li><p>Perform a <code>git pull</code> to ensure you have the latest code before you get started (you should always do this before you start a new task in a project).</p></li>
-           <li><p>Modify the line of code that says: "Student 1 - Student 2 - Student 3 - Student 4". Add your name in place of one of the Student placeholders.</p></li>
-           <li><p>In the <code>Portfolio</code> section, you will show case on of your projects. It can be anything you have on github (including something you've done in this class or a previous class). You will do the following:
-              <ul>
-                <li><p>Add an image that represents your project. (This image should be saved as a png alongside all the other images in this application.</p></li>
-                <li><p>Show that image on the portfolio section of <code>index.html</code></p></li>
-                <li><p>Modify the relevant modal to include the title of your project, your name, an accurate description of your project, and to use the same image that you used in <code>index.html</code> to open the modal. </p></li>
-              </ul>
-            <li><p>Commit your changes on your branch, and push your branch to github. Create a pull request in github to merge your branch with master.</p></li>
-            <li><p>The following video demonstrates how to do each of these steps:
-              <br>
-              <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/ol5klaKMWv4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </p></li>
-          </p></li>
-         </ol>
-      <h4>Merge Conflict Practice</h4>
-      <p>Since you are not the administrator of the Github Repository that this project was cloned from, you will not have to sort out merge conflicts when merging branches. When you do a <code>git pull</code>, frequently you will have to deal with merge conflicts with code you've written and code that was saved on the master branch. But in this part of the activity, you are going to make another modification in <code>index.html</code>, then pull the code from another branch into your branch. This should give you experience working with merge conflicts. Let's get started. :)</p>
-      <ol>
-        <li><p>Make a couple more changes to <code>index.html</code>. Ensure that the modal for your project contains a link to your project for others to access it. Also, modify the description of your project in your modal (even if it is just a single character that you change). If there is anything else you'd like to modify in the page, you may.</p></li>
-        <li><p>Commit your changes and push your branch's updates to Github.</p></li>
-        <li><p>Now, you are going to retrieve code from the branch of another student. 
-          <ul>
-            <li><p>Go to <a href="https://github.com/nathanbirch/html-template2/branches" target="blank">https://github.com/nathanbirch/html-template2/branches</a> and make note of what branches are there. You may pull from the <code>studentChanges</code> branch, or the branch of someone in your class.</p></li>
-            <li><p>To do this, you can use the command <code>git pull origin studentChanges</code>, or you can use the tool in VS Code. Click the 3 dots > then pull/push > push from> select --the branch you want to use--</p></li>
-            <li><p>Inspect any errors that take place, and try to fix them. </p></li>
-            <li><p>You will not create a pull request with this updated code from you and another student. This is just for you to get experience working with merge conflicts. </p></li>
-            <li><p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../site/fav.png" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="../site/style.css" />
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="../site/global.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/vs2015.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+    $(function () {
+      $('#includedHeader').load('../site/header.html');
+    });
+  </script>
+</head>
+
+<body>
+  <div id="includedHeader"></div>
+  <article>
+    <h1>Assignment #3</h1>
+    <h2>Overview</h2>
+    <p>This assignment will be unique, because in order to complete it, you will have to work with your peers in this class. :) In short, you will: </p>
+    <ul>
+      <li>
+        <p>clone a Github repository</p>
+      </li>
+      <li>
+        <p>create a branch</p>
+      </li>
+      <li>
+        <p>add your code</p>
+      </li>
+      <li>
+        <p>retrieve/pull the code from the branches of your peers</p>
+      </li>
+      <li>
+        <p>resolve merge conflicts</p>
+      </li>
+      <li>
+        <p>create a pull request to merge the team's code with the master branch</p>
+      </li>
+    </ul>
+    <p>The merge process is generally handled at an administrator level. In this case, only the owner of the repository will be able to allow changes to the master branch. But you will be able to clone the project, make a branch, then submit a pull request. When a pull request is submitted, the administrator of a repository will be able to view it, view your comments, your commits, and all code that was changed to decide whether they will merge the request and close it, and reject the merge and provide feedback as to why it was rejected.</p>
+    <p>The tricky part of this task will be to merge your code with the code of your peers. You will likely have to deal with merge conflicts and this will help you a lot with these essential skills.</p>
+    <h3>Your tasks are as follows:</h3>
+    <h4>Get familiar with the code</h4>
+    <ol>
+      <li>
+        <p>Clone this repository: <a href="https://github.com/nathanbirch/html-template2" target="be">https://github.com/nathanbirch/html-template2</a></p>
+      </li>
+      <li>
+        <p>Open the <code>index.html</code> file with live server and investigate the project.</p>
+      </li>
+      <li>
+        <p>You can also see what the production version of this code looks like <a href="https://nathanbirch.github.io/html-template2/" target="blank">here</a>.</p>
+      </li>
+    </ol>
+    <h4>Modify the code</h4>
+    <p>Your team (all the classmates in this course) will be working on this same repository and even the same <code>index.html</code> page. Because of this, make an effort to only modify those bits of code that you need to in order to complete your tasks.</p>
+    <ol>
+      <li>
+        <p>Perform a <code>git pull</code> to ensure you have the latest code before you get started (you should always do this before you start a new task in a project).</p>
+      </li>
+      <li>
+        <p>Modify the line of code that says: "Student 1 - Student 2 - Student 3 - Student 4". Add your name in place of one of the Student placeholders.</p>
+      </li>
+      <li>
+        <p>In the <code>Portfolio</code> section, you will show case one of your projects. It can be anything you have on github (including something you've done in this class or a previous class). You will do the following:
+        <ul>
+          <li>
+            <p>Add an image that represents your project. (This image should be saved as a png alongside all the other images in this application.</p>
+          </li>
+          <li>
+            <p>Show that image on the portfolio section of <code>index.html</code></p>
+          </li>
+          <li>
+            <p>Modify the relevant modal to include the title of your project, your name, an accurate description of your project, and to use the same image that you used in <code>index.html</code> to open the modal. </p>
+          </li>
+        </ul>
+      <li>
+        <p>Commit your changes on your branch, and push your branch to github. Create a pull request in github to merge your branch with master.</p>
+      </li>
+      <li>
+        <p>The following video demonstrates how to do each of these steps:
+          <br>
+          <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/ol5klaKMWv4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+      </li>
+      </p>
+      </li>
+    </ol>
+    <h4>Merge Conflict Practice</h4>
+    <p>Since you are not the administrator of the Github Repository that this project was cloned from, you will not have to sort out merge conflicts when merging branches. When you do a <code>git pull</code>, frequently you will have to deal with merge conflicts with code you've written and code that was saved on the master branch. But in this part of the activity, you are going to make another modification in <code>index.html</code>, then pull the code from another branch into your branch. This should give you experience working with merge conflicts. Let's get started. :)</p>
+    <ol>
+      <li>
+        <p>Make a couple more changes to <code>index.html</code>. Ensure that the modal for your project contains a link to your project for others to access it. Also, modify the description of your project in your modal (even if it is just a single character that you change). If there is anything else you'd like to modify in the page, you may.</p>
+      </li>
+      <li>
+        <p>Commit your changes and push your branch's updates to Github.</p>
+      </li>
+      <li>
+        <p>Now, you are going to retrieve code from the branch of another student.
+        <ul>
+          <li>
+            <p>Go to <a href="https://github.com/nathanbirch/html-template2/branches" target="blank">https://github.com/nathanbirch/html-template2/branches</a> and make note of what branches are there. You may pull from the <code>studentChanges</code> branch, or the branch of someone in your class.</p>
+          </li>
+          <li>
+            <p>To do this, you can use the command <code>git pull origin studentChanges</code>, or you can use the tool in VS Code. Click the 3 dots > then pull/push > push from> select --the branch you want to use--</p>
+          </li>
+          <li>
+            <p>Inspect any errors that take place, and try to fix them. </p>
+          </li>
+          <li>
+            <p>You will not create a pull request with this updated code from you and another student. This is just for you to get experience working with merge conflicts. </p>
+          </li>
+          <li>
+            <p>
               The following video shows the completion of these steps:
               <br>
               <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/E3I8sNBdbzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </p></li>
-          </ul>
-        </p></li>
+            </p>
+          </li>
+        </ul>
+        </p>
+      </li>
 
-      </ol>
-      <h3>Stretch Challenges</h3>
-      <ul>
-        <li><p>Add another page the same way that Portfolio, About, and Contact are implemented. </p></li>
-        <li><p>Add another portfolio project...maybe create a new one this time, instead of using a template one that is already there.</p></li>
-        <li><p>Try to add an Easter egg...something hidden, something funny. :)</p></li>
-      </ul>
-      <h3>Submit Assignment</h3>
-      <ul>
-        <li>
-          <p>
-            Fill out
-            <a href="https://forms.gle/desf4PebddbyAjJ48" target="_blank"
-              >This Form</a
-            >
-            to submit your assignment. You will need your github repository url to complete this
-            form.
-          </p>
-        </li>
-      </ul>
-    </article>
-  </body>
+    </ol>
+    <h3>Stretch Challenges</h3>
+    <ul>
+      <li>
+        <p>Add another page the same way that Portfolio, About, and Contact are implemented. </p>
+      </li>
+      <li>
+        <p>Add another portfolio project...maybe create a new one this time, instead of using a template one that is already there.</p>
+      </li>
+      <li>
+        <p>Try to add an Easter egg...something hidden, something funny. :)</p>
+      </li>
+    </ul>
+    <h3>Submit Assignment</h3>
+    <ul>
+      <li>
+        <p>
+          Fill out
+          <a href="https://forms.gle/desf4PebddbyAjJ48" target="_blank">This Form</a>
+          to submit your assignment. You will need your github repository url to complete this
+          form.
+        </p>
+      </li>
+    </ul>
+  </article>
+</body>
+
 </html>
