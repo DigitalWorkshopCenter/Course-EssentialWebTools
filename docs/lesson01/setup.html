@@ -38,17 +38,22 @@
         </ol>
         <h2>If you took the JavaScript 1 course with Nathan Birch, you only have to do the following: </h2>
         <ul>
-            <li><p>Create a new <a href="http://github.com" target="_blank">github</a> repository called <code>javascript2</code>.</p></li>
-            <li><p>Use the git clone command to clone this repository on your computer.</p></li>
-            <li><p>The following video goes through this process in detail and will help get you set up for the whole course.</p></li>
+            <li>
+                <p>Create a new <a href="http://github.com" target="_blank">github</a> repository called <code>javascript2</code>.</p>
+            </li>
+            <li>
+                <p>Use the git clone command to clone this repository on your computer.</p>
+            </li>
+            <li>
+                <p>The following video goes through this process in detail and will help get you set up for the whole course.</p>
+            </li>
             <li><iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/PvvaOwO4nKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
         </ul>
         <h2>Complete Course Setup (VS Code, Chrome, Git, Github, etc.)</h2>
         <p>This video goes through the entire course setup, all of the installs and how to get things started along with a few extra tips on using git version control. (Anytime it says JavaScript1, use JavaScript2 because this is the JavaScript2 Course now).</p>
         <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/cHFsKOvpluc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <h3>VS Code</h3>
-        <p>To set up our computers to write JavaScript, all we need to do is download a text editor. We will be using <a
-                href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> also known as VS Code.</p>
+        <p>To set up our computers to write JavaScript, all we need to do is download a text editor. We will be using <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> also known as VS Code.</p>
         <ol>
             <li>
                 <p>Open <a target="_blank" href="https://code.visualstudio.com/download">this webpage</a> in your
@@ -100,8 +105,7 @@
         <h3>File Organization</h3>
         <p>This part of the tutorial does not require you to install anything, but you are encouraged to store all of
             your code in one place on your computer. This is important because eventually, your code will be used in
-            what's called a <a href="https://www.thebalancecareers.com/what-is-a-professional-portfolio-1987043"
-                target="_blank">professional portfolio</a> to help you get a job. </p>
+            what's called a <a href="https://www.thebalancecareers.com/what-is-a-professional-portfolio-1987043" target="_blank">professional portfolio</a> to help you get a job. </p>
         <p>Create a folder on your computer for this class called <code>JavaScript2</code>.</p>
         <ol>
             <li>
@@ -118,18 +122,29 @@
         <h3>Github Account</h3>
         <p>Lastly, we will use github to store all of our code. Github is used very widely in industry and we will also
             use it for your professional portfolio, to show to potential employers as you grow your skillset in web
-            development.  GitHub is essentially a big database of source code for people all around the world. You can make your source code public or private and configure many different permissions and settings. Each project has its own repository, or "repo". This repository will be a clone of the one on your local computer. Thus, you will have two copies of your code, one on your local computer and one at GitHub.</p>
+            development. GitHub is essentially a big database of source code for people all around the world. You can make your source code public or private and configure many different permissions and settings. Each project has its own repository, or "repo". This repository will be a clone of the one on your local computer. Thus, you will have two copies of your code, one on your local computer and one at GitHub.</p>
         <h4>Install Git</h4>
         <ol>
-            <li><p>If you haven't before, you'll need to and install git. If you already have git installed, <a href="#newRepo">skip this step</a>.</p></li>
-            <li><p>Go to <a href="https://git-scm.com/downloads" target="_blank">git-scm.com</a> and choose the appropriate download for your operating system.</p></li>
-            <li><p>Run the installer with the default settings and wait for the installation to finish.</p></li>
+            <li>
+                <p>If you haven't before, you'll need to and install git. If you already have git installed, <a href="#newRepo">skip this step</a>.</p>
+            </li>
+            <li>
+                <p>Go to <a href="https://git-scm.com/downloads" target="_blank">git-scm.com</a> and choose the appropriate download for your operating system.</p>
+            </li>
+            <li>
+                <p>Run the installer with the default settings and wait for the installation to finish.</p>
+            </li>
             <img src="images/git.png" alt="Run the git installer" class="img-tutorial">
-            <li><p>Restart VS Code if you have it open, and open a new terminal window by selecting New Terminal inside of the Terminal menu.</p></li>
+            <li>
+                <p>Restart VS Code if you have it open, and open a new terminal window by selecting New Terminal inside of the Terminal menu.</p>
+            </li>
             <img class="img-tutorial" src="images/read3 copy.png" alt="Terminal > New terminal">
-            <li><p>In your terminal, execute <code>git --version</code>.</p></li>
+            <li>
+                <p>In your terminal, execute <code>git --version</code>.</p>
+            </li>
             <img src="images/git2.png" alt="git --version" class="img-tutorial">
-            <li><p>If "git --version" produces an error, make sure git has been <a href="https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/" target="_blank">added to your PATH environment variable</a>, then restart VS Code.</p>
+            <li>
+                <p>If "git --version" produces an error, make sure git has been <a href="https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/" target="_blank">added to your PATH environment variable</a>, then restart VS Code.</p>
                 <div class="tips">
                     <p>Instructor Tip:</p>
                     <p>On Windows, Git is usually installed at <code>C:\Program Files\Git\cmd</code>. This is the location that should be added to your PATH.</p>
@@ -138,27 +153,46 @@
         </ol>
         <h4 id="newRepo">Create a new repository</h4>
         <ol>
-            <li><p>Go to <a href="http://github.com" target="_blank">GitHub.com</a> and sign up for a new account if you haven't already. If you already have an account, that is perfect, you can use it here.</p></li>
-            <li><p>After creating an account, return to GitHub.com and sign in. In the upper right corner of the screen you should see a "+" icon. Click this and select "New Repository".</p></li>
-            <li><p>Choose a name for your repository (likely javascript2 or something similar).</p></li>
-            <li><p>Leave the repo public and do not check the box for a readme. Leave .gitignore and license as "none".</p>
-                    <div class="tips">
+            <li>
+                <p>Go to <a href="http://github.com" target="_blank">GitHub.com</a> and sign up for a new account if you haven't already. If you already have an account, that is perfect, you can use it here.</p>
+            </li>
+            <li>
+                <p>After creating an account, return to GitHub.com and sign in. In the upper right corner of the screen you should see a "+" icon. Click this and select "New Repository".</p>
+            </li>
+            <li>
+                <p>Choose a name for your repository (likely javascript2 or something similar).</p>
+            </li>
+            <li>
+                <p>Leave the repo public and do not check the box for a readme. Leave .gitignore and license as "none".</p>
+                <div class="tips">
                     <p>Instructor Tip:</p>
                     <p>It's not technically a problem if you add these other files now, but it makes it a little more difficult when you go to push to GitHub for the first time, because you'll have conflicts that you'll have to resolve. So at this point, it's easiest to leave everything blank.</p>
                 </div>
             </li>
-            <li><p>Click the button to create the repository.</p></li>
-            <li><p>On the page that follows, you should see a URL for your new repository (e.g., "https://github.com/username/repositoryname.git"). Copy this URL for use later on.</p></li>
+            <li>
+                <p>Click the button to create the repository.</p>
+            </li>
+            <li>
+                <p>On the page that follows, you should see a URL for your new repository (e.g., "https://github.com/username/repositoryname.git"). Copy this URL for use later on.</p>
+            </li>
         </ol>
         <h4>Set up the repository on your computer</h4>
         <ol>
-            <li><p>In VS Code, selectOpen Folder from the File menu. Open the  <code>JavaScript2</code>  folder you just created.</p></li>
+            <li>
+                <p>In VS Code, selectOpen Folder from the File menu. Open the <code>JavaScript2</code> folder you just created.</p>
+            </li>
             <img class="img-tutorial" src="images/read2 copy.png" alt="File > Open Folder">
-            <li><p>Open a new terminal window by selecting New Terminal inside of the Terminal menu.</p></li>
+            <li>
+                <p>Open a new terminal window by selecting New Terminal inside of the Terminal menu.</p>
+            </li>
             <img class="img-tutorial" src="images/read3 copy.png" alt="Terminal > New terminal">
-            <li><p>Return to GitHub, open your project repository, copy the link to clone it</p></li>
+            <li>
+                <p>Return to GitHub, open your project repository, copy the link to clone it</p>
+            </li>
             <img class="img-tutorial" src="images/read4.png" alt="">
-            <li><p>In your terminal, execute "git clone --your url--"</p></li>
+            <li>
+                <p>In your terminal, execute "git clone --your url--"</p>
+            </li>
             <img class="img-tutorial" src="images/read5.png" alt="git clone ...">
         </ol>
         <h2>Conclusion</h2>

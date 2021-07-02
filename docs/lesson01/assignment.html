@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../site/style.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="../site/global.js"></script>
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/vs2015.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
     <script>
@@ -29,62 +29,105 @@
         <p>Your tasks are as follows:</p>
         <h3>Familiarize Yourself with Someone Else's Project, and Fork it</h3>
         <ol>
-            <li><p>Open the <a href="https://github.com/nathanbirch/html-template" target="_blank">nathanbirch/html-template</a> repository on github.</p></li>
-            <li><p>In the browser, navigate the files and commit history.</p></li>
-            <li><p>After learning about this repository, what could you share with someone else about it? What does it look like? What is the project supposed to do? Has a lot of effort gone in into it? How many people have collaborated on it? etc.</p></li>
-            <li><p>Now that you are comfortable with the structure of this project, click the <code>fork</code> button in the top right corner of the github page.
-            <br>
-            <img src="images/assignment1.png" class="img-tutorial" alt="">
-            <br>
-            When a project is forked, it basically copies the project and makes a new repository for you to use. If you go to your github portfolio page, or look at the list of your repositories, you should see this new html-template there as well.</p></li>
+            <li>
+                <p>Open the <a href="https://github.com/nathanbirch/html-template" target="_blank">nathanbirch/html-template</a> repository on github.</p>
+            </li>
+            <li>
+                <p>In the browser, navigate the files and commit history.</p>
+            </li>
+            <li>
+                <p>After learning about this repository, what could you share with someone else about it? What does it look like? What is the project supposed to do? Has a lot of effort gone in into it? How many people have collaborated on it? etc.</p>
+            </li>
+            <li>
+                <p>Now that you are comfortable with the structure of this project, click the <code>fork</code> button in the top right corner of the github page.
+                    <br>
+                    <img src="images/assignment1.png" class="img-tutorial" alt="">
+                    <br>
+                    When a project is forked, it basically copies the project and makes a new repository for you to use. If you go to your github portfolio page, or look at the list of your repositories, you should see this new html-template there as well.
+                </p>
+            </li>
         </ol>
         <h3>Clone the Repository on to Your Computer</h3>
         <ol>
-            <li><p>Open a new VS Code window that does not have a project open. Click <code>Clone Git Repository...</code>
-            <br>
-            <img src="images/assignment2.png" class="img-tutorial" alt="">
-            </p></li>
-            <li><p>Paste the url of your newly forked github repository and click <code>Clone from URL</code>.
-            <br>
-            <img src="images/assignment3.png" class="img-tutorial" alt="">
-            </p></li>
-            <li><p>A File Explorer window will open, select where you want this code to be stored. Ensure that it is not inside of another git repository.</p></li>
-            <li><p>Finally, test your code. Open index.html with <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Live Server</a> and see if your new project works the way you want it to.</p></li>
+            <li>
+                <p>Open a new VS Code window that does not have a project open. Click <code>Clone Git Repository...</code>
+                    <br>
+                    <img src="images/assignment2.png" class="img-tutorial" alt="">
+                </p>
+            </li>
+            <li>
+                <p>Paste the url of your newly forked github repository and click <code>Clone from URL</code>.
+                    <br>
+                    <img src="images/assignment3.png" class="img-tutorial" alt="">
+                </p>
+            </li>
+            <li>
+                <p>A File Explorer window will open, select where you want this code to be stored. Ensure that it is not inside of another git repository.</p>
+            </li>
+            <li>
+                <p>Finally, test your code. Open index.html with <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Live Server</a> and see if your new project works the way you want it to.</p>
+            </li>
         </ol>
         <h3>Add an HTML page</h3>
         <p>After investigating this code for a while, you can see that the links in the nav don't work, because there aren't any other html files for those links to take the user to. For this assignment, you will create an <code>about.html</code> page, and modify the link in <code>index.html</code> to navigate to that page.</p>
         <ol>
-            <li><p>Create a new file called <code>about.html</code>. This should be right next to index.html in the file explorer of VS Code.
-                <br>
-                <img src="images/assignment4.png" class="img-tutorial" alt="">
-            </p></li>
-            <li><p>Modify the <code>href</code> attribute of the a tag in the nav of index.html. When clicked, it should go to about.html instead of #.</p></li>
+            <li>
+                <p>Create a new file called <code>about.html</code>. This should be right next to index.html in the file explorer of VS Code.
+                    <br>
+                    <img src="images/assignment4.png" class="img-tutorial" alt="">
+                </p>
+            </li>
+            <li>
+                <p>Modify the <code>href</code> attribute of the a tag in the nav of index.html. When clicked, it should go to about.html instead of #.</p>
+            </li>
         </ol>
         <h3>Commit Changes and Push to Github</h3>
-        <ol>    
-            <li><p>Click on the Source Control icon in VS Code:<br>
-            <img src="images/assignment5.png" class="img-tutorial" alt="">
-            </p></li>
-            <li><p>Enter a commit message and click the check:<br>
-            <img src="images/assignment6.png" class="img-tutorial" alt="">
-            </p></li>
-            <li><p>Click the three dots, then click push: <br>
-            <img src="images/assignment7.png" class="img-tutorial" alt="">
-            </p></li>
-            <li><p>Navigate to github.com and go to your repository. Check to ensure your new commit and update code is showing up there.</p></li>
+        <ol>
+            <li>
+                <p>Click on the Source Control icon in VS Code:<br>
+                    <img src="images/assignment5.png" class="img-tutorial" alt="">
+                </p>
+            </li>
+            <li>
+                <p>Enter a commit message and click the check:<br>
+                    <img src="images/assignment6.png" class="img-tutorial" alt="">
+                </p>
+            </li>
+            <li>
+                <p>Click the three dots, then click push: <br>
+                    <img src="images/assignment7.png" class="img-tutorial" alt="">
+                </p>
+            </li>
+            <li>
+                <p>Navigate to github.com and go to your repository. Check to ensure your new commit and update code is showing up there.</p>
+            </li>
         </ol>
         <h3>Stretch Challenges</h3>
         <ul>
-            <li><p>Copy the nav code from index.html and include it in about.html. Find where you have to change a css class to make the about.html show as active.</p></li>
-            <li><p>Ensure that you can get back to index.html from about.html (without using the back button).</p></li>
-            <li><p>Add the Services Page. Copy the nav and make it look good as well.</p></li>
-            <li><p>Add the Team Page. Copy the nav and make it look good as well.</p></li>
-            <li><p>Add the Connect Page. Copy the nav and make it look good as well.</p></li>
-            <li><p><a href="https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository" target="_blank">Add a collaborator</a> to your github project. Have them add some code and push it to github. Then you try pulling their code from github to your computer. If you have any errors, Google the error.</p></li>
+            <li>
+                <p>Copy the nav code from index.html and include it in about.html. Find where you have to change a css class to make the about.html show as active.</p>
+            </li>
+            <li>
+                <p>Ensure that you can get back to index.html from about.html (without using the back button).</p>
+            </li>
+            <li>
+                <p>Add the Services Page. Copy the nav and make it look good as well.</p>
+            </li>
+            <li>
+                <p>Add the Team Page. Copy the nav and make it look good as well.</p>
+            </li>
+            <li>
+                <p>Add the Connect Page. Copy the nav and make it look good as well.</p>
+            </li>
+            <li>
+                <p><a href="https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository" target="_blank">Add a collaborator</a> to your github project. Have them add some code and push it to github. Then you try pulling their code from github to your computer. If you have any errors, Google the error.</p>
+            </li>
         </ul>
         <h3>Submit Assignment</h3>
         <ul>
-            <li><p>Fill out <a href="https://forms.gle/4mKBpxZJayswEdrd9" target="_blank">This Form</a> to submit your assignment. You will need your github repository url (ie: https://github.com/yourUserName/html-template) to complete this form.</p></li>
+            <li>
+                <p>Fill out <a href="https://forms.gle/4mKBpxZJayswEdrd9" target="_blank">This Form</a> to submit your assignment. You will need your github repository url (ie: https://github.com/yourUserName/html-template) to complete this form.</p>
+            </li>
         </ul>
     </article>
 </body>

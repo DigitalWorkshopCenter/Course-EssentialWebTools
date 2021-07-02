@@ -2,54 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../site/fav.png" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="../site/style.css" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/vs2015.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="../site/global.js"></script>
-    <script>
-        hljs.highlightAll();
-        $(function () {
-            $("#includedHeader").load("../site/header.html");
-        });
-        window.onload = function () { // load global variables
-            document.title = g.u01;
-            document.getElementById('g_u01').innerHTML = g.u01;
-            document.getElementById('g_t1_0').innerHTML = g.t1_0;
-            
-        };
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../site/fav.png" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="../site/style.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/vs2015.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="../site/global.js"></script>
+  <script>
+    hljs.highlightAll();
+    $(function () {
+      $("#includedHeader").load("../site/header.html");
+    });
+    window.onload = function () { // load global variables
+      document.title = g.u01;
+      document.getElementById('g_u01').innerHTML = g.u01;
+      document.getElementById('g_t1_0').innerHTML = g.t1_0;
+
+    };
+  </script>
 </head>
 
 <body>
-    <div id="includedHeader"></div>
-    <article>
-        <h1 id="g_u01"></h1>
-        <h2>Reading Materials: <span id='g_t1_0'></span></h2>
-        <p>This page will briefly cover all of the topics that were taught in the JavaScript 1 Course. Before proceeding with the reading and assignments for this lesson, you are encouraged to review the following material and ensure that you are comfortable with it.</p>
-        
+  <div id="includedHeader"></div>
+  <article>
+    <h1 id="g_u01"></h1>
+    <h2>Reading Materials: <span id='g_t1_0'></span></h2>
+    <p>This page will briefly cover all of the topics that were taught in the JavaScript 1 Course. Before proceeding with the reading and assignments for this lesson, you are encouraged to review the following material and ensure that you are comfortable with it.</p>
 
 
 
-        
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Variables and Data Structures
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body" id="body1">
-                    <p>We declare variables in JavaScript using the <code>let</code> keyword. JavaScript includes the following data Structures (datatypes):</p>
-                    <pre><code class="js">
+
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Variables and Data Structures
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body" id="body1">
+            <p>We declare variables in JavaScript using the <code>let</code> keyword. JavaScript includes the following data Structures (datatypes):</p>
+            <pre><code class="js">
     let name;                                                // undefined
     let todayIsRainy = false;                                // boolean
     let studentAge = 20;                                     // number
@@ -60,19 +60,19 @@
         return width * height 
     };
                     </code></pre>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    JavaScript Arithmetic
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body" id="body2">
-                    <p>JavaScript supports the following arithmetic operators</p>
-                    <pre><code class="js">
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            JavaScript Arithmetic
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body" id="body2">
+            <p>JavaScript supports the following arithmetic operators</p>
+            <pre><code class="js">
     let x = 5 + 2; // addition       (x is 7)
     let y = x - 3; // subtraction    (y is 4)
     let z = x * y; // multiplication (z is 28)
@@ -82,28 +82,28 @@
     z++;           // increment      (z is 2)
     z--;           // decrement      (z is 1)
                     </code></pre>
-                    <p>...and the following arithmetic shortcuts</p>
-                    <pre><code class="js">
+            <p>...and the following arithmetic shortcuts</p>
+            <pre><code class="js">
     let x = 5; // x is 5
     x += 2;    // x is 7
     x -= 1;    // x is 1
     x *= 6;    // x is 6
     x /= 2     // x is 3
     x %= 2     // x is 1
-                    </code></pre>                  
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    If Statements and Boolean Expressions
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                <div class="accordion-body"  id="body3">
-                    <p>JavaScript supports the following <code>Conditional Operators</code> and when used in an expression, they form a boolean expression, meaning their output is a true/false value as shown below</p>
-                    <pre><code class="js">
+                    </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            If Statements and Boolean Expressions
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body" id="body3">
+            <p>JavaScript supports the following <code>Conditional Operators</code> and when used in an expression, they form a boolean expression, meaning their output is a true/false value as shown below</p>
+            <pre><code class="js">
     let x = 5, y = 10; // declare variables for the following examples
     x == y             // is equal to value:              false
     x === y            // is equal to value and type:     false
@@ -114,14 +114,14 @@
     x < y              // is lesser than:                 true
     x <= y             // is lesser than or equal to:     true
                     </code></pre>
-                    <p>JavaScript supports the following <code>Logical Operators</code></p>
-                    <pre><code class="js">
+            <p>JavaScript supports the following <code>Logical Operators</code></p>
+            <pre><code class="js">
     (5 < 6 && 7 === 8)    // AND: false
     (5 < 6 || 7 === 8)    // OR: true
     (5 < 6 && !(7 === 8)) // NOT: true
                     </code></pre>
-                    <p>If statements in JavaScript look like the following: </p>
-                    <pre><code class="js">
+            <p>If statements in JavaScript look like the following: </p>
+            <pre><code class="js">
     if (day === "Sunday" && time === "9:00am") {
         alert("Go to Church");
     } else if ((day === "Monday"    || 
@@ -133,20 +133,20 @@
     } else {
         alert("Go Play!");
     }
-                    </code></pre>                  
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Repetition (Loops)
-                  </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                  <div class="accordion-body" id="body4">
-                    <p>JavaScript implements the following loop types: </p>
-                    <pre><code class="js">
+                    </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Repetition (Loops)
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body" id="body4">
+            <p>JavaScript implements the following loop types: </p>
+            <pre><code class="js">
     // for loop example            
     for (let step = 0; step < 5; step++) { 
         // Runs 5 times, with values of step 0 through 4.
@@ -184,20 +184,20 @@
     for (let i of arr) {       
         console.log(i); // logs 3, 5, 7
     }
-                    </code></pre>                                     
-                  </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    DOM (Document Object Model)
-                  </button>
-                </h2>
-                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                  <div class="accordion-body" id="body5">
-                    <p>JavaScript can manipulate the DOM in many ways. The following code should be familiar to you.</p>
-                    <pre><code class="js">
+                    </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            DOM (Document Object Model)
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          <div class="accordion-body" id="body5">
+            <p>JavaScript can manipulate the DOM in many ways. The following code should be familiar to you.</p>
+            <pre><code class="js">
     // run this function when the document is loaded
     window.onload = function() {
         // create an HTML header
@@ -207,86 +207,112 @@
         document.body.appendChild(heading);
     }
                     </code></pre>
-                    <p>Additionally, you should be familiar with the following functions: </p>
-                    <ul>
-                        <li><p>document.getElementById()</p></li>
-                        <li><p>document.querySelector()</p></li>
-                        <li><p>document.querySelectorAll()</p></li>
-                        <li><p>element.setAttribute()</p></li>
-                    </ul>                                     
-                  </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSix">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    Forms and Validation
-                  </button>
-                </h2>
-                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                  <div class="accordion-body" id="body6">
-                    <p>HTML forms used in conjunction with JavaScript can provide infinite opportunities in web application development. <a href="https://www.w3schools.com/js/js_validation.asp">This</a> W3schools page does a great job of going through html forms, JavaScript data retrieval and form validation.</p>
-                  </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSeven">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    Chrome Developer Tools - Debugging
-                  </button>
-                </h2>
-                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-                  <div class="accordion-body" id="body7">
-                    <p>You should be familiar with the following tabs in the developer tools in Google Chrome: </p>
-                    <ul>
-                        <li><p>Elements</p></li>
-                        <li><p>Console</p></li>
-                        <li><p>Sources</p></li>
-                    </ul>
-                    <p>Watch this video for a review on how to run the debugger in the Sources tab:</p>
-                    <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/H0aJ-HU_Ijg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                     
-                  </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingEight">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    Github Commands and Purpose
-                  </button>
-                </h2>
-                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
-                  <div class="accordion-body" id="body8">
-                    <p>Github is used to store code. We use git on our computers to keep our computers in sync with the code stored in Github. Github is used very widely in industry and we will also
-                        use it for your professional portfolio, to show to potential employers as you grow your skillset in web
-                        development.  GitHub is essentially a big database of source code for people all around the world. You can make your source code public or private and configure many different permissions and settings. Each project has its own repository, or "repo". This repository will be a clone of the one on your local computer. Thus, you will have two copies of your code, one on your local computer and one at GitHub.</p>
-                    <p>Among others, you should be familiar with the following git commands: </p>
-                    <ul>
-                        <li><p><code>git clone</code></p></li>
-                        <li><p><code>git remote</code></p></li>
-                        <li><p><code>git status</code></p></li>
-                        <li><p><code>git add .</code></p></li>
-                        <li><p><code>git commit -m ""</code></p></li>
-                        <li><p><code>git push</code></p></li>
-                    </ul>
-                    <p>This video may be helpful if you are new to these concepts: </p>
-                    <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/SWYqp7iY_Tc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                 
-                  </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingNine">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                    Conclusion
-                  </button>
-                </h2>
-                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
-                  <div class="accordion-body" id="body9">
-                    <p>Once you feel comfortable with everything on this page, you are ready to proceed to the <a href="reading.html">reading for lesson one</a> of the Advanced JavaScript Course.</p>                    
-                  </div>
-                </div>
-            </div>
+            <p>Additionally, you should be familiar with the following functions: </p>
+            <ul>
+              <li>
+                <p>document.getElementById()</p>
+              </li>
+              <li>
+                <p>document.querySelector()</p>
+              </li>
+              <li>
+                <p>document.querySelectorAll()</p>
+              </li>
+              <li>
+                <p>element.setAttribute()</p>
+              </li>
+            </ul>
+          </div>
         </div>
-    </article>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            Forms and Validation
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+          <div class="accordion-body" id="body6">
+            <p>HTML forms used in conjunction with JavaScript can provide infinite opportunities in web application development. <a href="https://www.w3schools.com/js/js_validation.asp">This</a> W3schools page does a great job of going through html forms, JavaScript data retrieval and form validation.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSeven">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            Chrome Developer Tools - Debugging
+          </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+          <div class="accordion-body" id="body7">
+            <p>You should be familiar with the following tabs in the developer tools in Google Chrome: </p>
+            <ul>
+              <li>
+                <p>Elements</p>
+              </li>
+              <li>
+                <p>Console</p>
+              </li>
+              <li>
+                <p>Sources</p>
+              </li>
+            </ul>
+            <p>Watch this video for a review on how to run the debugger in the Sources tab:</p>
+            <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/H0aJ-HU_Ijg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingEight">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            Github Commands and Purpose
+          </button>
+        </h2>
+        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+          <div class="accordion-body" id="body8">
+            <p>Github is used to store code. We use git on our computers to keep our computers in sync with the code stored in Github. Github is used very widely in industry and we will also
+              use it for your professional portfolio, to show to potential employers as you grow your skillset in web
+              development. GitHub is essentially a big database of source code for people all around the world. You can make your source code public or private and configure many different permissions and settings. Each project has its own repository, or "repo". This repository will be a clone of the one on your local computer. Thus, you will have two copies of your code, one on your local computer and one at GitHub.</p>
+            <p>Among others, you should be familiar with the following git commands: </p>
+            <ul>
+              <li>
+                <p><code>git clone</code></p>
+              </li>
+              <li>
+                <p><code>git remote</code></p>
+              </li>
+              <li>
+                <p><code>git status</code></p>
+              </li>
+              <li>
+                <p><code>git add .</code></p>
+              </li>
+              <li>
+                <p><code>git commit -m ""</code></p>
+              </li>
+              <li>
+                <p><code>git push</code></p>
+              </li>
+            </ul>
+            <p>This video may be helpful if you are new to these concepts: </p>
+            <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/SWYqp7iY_Tc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingNine">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+            Conclusion
+          </button>
+        </h2>
+        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+          <div class="accordion-body" id="body9">
+            <p>Once you feel comfortable with everything on this page, you are ready to proceed to the <a href="reading.html">reading for lesson one</a> of the Advanced JavaScript Course.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
 </body>
 
 </html>

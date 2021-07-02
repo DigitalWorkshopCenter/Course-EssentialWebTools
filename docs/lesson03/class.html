@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../site/fav.png" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="../site/style.css" />
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="../site/global.js"></script>
-    <script>
-      $(function () {
-        $('#includedHeader').load('../site/header.html');
-      });
-      window.onload = function () {
-        // load global variables
-        document.title = g.n03 + ' Class';
-        document.getElementById('g_classTime').innerHTML =
-          g.n03 + ' ' + g.classTime;
-      };
-    </script>
-  </head>
 
-  <body>
-    <div id="includedHeader"></div>
-    <article>
-      <h1 id="g_classTime"></h1>
-      <h2>Overview</h2>
-      <h3>Hands-on Activities</h3>
-      <p>
-        These activities build upon one another and are intended to be completed
-        in order.
-      </p>
-      <ul>
-        <li>
-          <p>
-            <a href="class1.html">Hands-on Exercise 1 - Practice with Git</a>
-          </p>
-        </li>
-        <li>
-          <p>
-            <a href="class2.html">Hands-on Exercise 2 - Practice with Bootstrap</a>
-          </p>
-        </li>
-      </ul>
-    </article>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../site/fav.png" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="../site/style.css" />
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="../site/global.js"></script>
+  <script>
+    $(function () {
+      $('#includedHeader').load('../site/header.html');
+    });
+    window.onload = function () {
+      // load global variables
+      document.title = g.n03 + ' Class';
+      document.getElementById('g_classTime').innerHTML =
+        g.n03 + ' ' + g.classTime;
+    };
+  </script>
+</head>
+
+<body>
+  <div id="includedHeader"></div>
+  <article>
+    <h1 id="g_classTime"></h1>
+    <h2>Overview</h2>
+    <h3>Hands-on Activities</h3>
+    <p>
+      These activities build upon one another and are intended to be completed
+      in order.
+    </p>
+    <ul>
+      <li>
+        <p>
+          <a href="class1.html">Hands-on Exercise 1 - Practice with Git</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="class2.html">Hands-on Exercise 2 - Practice with Bootstrap</a>
+        </p>
+      </li>
+    </ul>
+  </article>
+</body>
+
 </html>
