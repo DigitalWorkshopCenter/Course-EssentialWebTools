@@ -20578,8 +20578,8 @@ reference element's position.
         let particleHome = {
           selector: '.background',
           connectParticles: true,
-          speed: 5,
-          color: ['#7FFF00', '#DC143C', '#1E90FF'],
+          speed: 1,
+          color: ['#7FFF00', '#DC143C', '#1E90FF', '#8B008B'],
         };
 
         let particleAbout = {
